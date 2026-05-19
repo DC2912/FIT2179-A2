@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Australian Industry Insights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-eyebrow">FIT2179 Assignment 2</div>
+    <h1 class="hero-title">The State of<br><em>Australian Industry</em></h1>
+    <p class="hero-sub">A visual deep-dive into employment, wages, mobility, and growth across every sector of the Australian economy.</p>
+    <div class="hero-scroll">Scroll to explore ↓</div>
+    <div class="hero-bg-grid"></div>
+  </header>
+
+  <!-- Nav -->
+  <nav class="sticky-nav">
+    <a href="#section-1">Industry Overview</a>
+    <a href="#section-2">Employment Trends</a>
+    <a href="#section-3">Geographic</a>
+    <a href="#section-4">State Comparison</a>
+    <a href="#section-5">Occupation Detail</a>
+    <a href="#section-6">Commuting</a>
+  </nav>
+
+  <main>
+
+    <!-- ── SECTION 1 ── Industry Overview -->
+    <section id="section-1" class="chart-section">
+      <div class="section-label">01 / Industry Overview</div>
+      <div class="section-header">
+        <div class="section-title-block">
+          <h2>Employment, Wages &amp; Sales<br>by Sector</h2>
+          <p class="section-desc">Select a sector to compare total employed persons, median weekly wages, and annual sales revenue across Australia's major industries. Notice how large workforces don't always command the highest wages.</p>
+        </div>
+        <div class="section-annotation">
+          <span class="annotation-tag">Grouped Bar</span>
+          <p>Each cluster represents one industry. Bars are scaled independently per metric — use the filter to isolate sectors.</p>
+          <p>Each metric is scaled to its own category peak — employment against Food Services, wages against Professional, Scientific & Technical Services, and sales against Construction.</p>
+        </div>
+      </div>
+      <div class="chart-frame" id="chart1"></div>
+    </section>
+
+    <!-- ── SECTION 2 ── Employment Trends -->
+    <section id="section-2" class="chart-section alt-bg">
+      <div class="section-label">02 / Employment Trends</div>
+      <div class="section-header">
+        <div class="section-title-block">
+          <h2>Inflow, Outflow &amp;<br>Total Employment</h2>
+          <p class="section-desc">The line tracks total employment across all industries over the past five years. Overlaid bars show the spread between labour inflow and outflow for each period — wider gaps signal structural shifts in the workforce.</p>
+        </div>
+        <div class="section-annotation">
+          <span class="annotation-tag">Line + Bar</span>
+          <p>Dot endpoints = inflow &amp; outflow. Line = net employment. A rising line with narrowing dumbbells indicates consolidation.</p>
+        </div>
+      </div>
+      <div class="chart-frame" id="chart2"></div>
+    </section>
+
+    <!-- ── SECTION 3 ── Geographic -->
+    <section id="section-3" class="chart-section">
+      <div class="section-label">03 / Geographic Distribution</div>
+      <div class="section-header">
+        <div class="section-title-block">
+          <h2>Employment by State,<br>2024</h2>
+          <p class="section-desc">Circle size encodes total employed persons by employment range within each state and territory. The bigger the state, the larger the circle</p>
+        </div>
+        <div class="section-annotation">
+          <span class="annotation-tag">Proportional Symbol Map</span>
+          <p>Filter by employment range bracket. East coast states NSW, VIC and QLD accounted for the largest share of employed people. But while NT and ACT are small, they punch above their weight per capita.</p>
+        </div>
+      </div>
+      <div class="chart-frame wide" id="chart3"></div>
+    </section>
+
+    <!-- ── SECTION 4 ── State Labour Market -->
+    <section id="section-4" class="chart-section alt-bg">
+      <div class="section-label">04 / SA4 Area Labour Market Health</div>
+      <div class="section-header">
+        <div class="section-title-block">
+          <h2>Employment, Unemployment<br>&amp; Vacancy Rates</h2>
+          <p class="section-desc">A choropleth of four key labour market indicators across sub-state regions. Switch between working-age employment rate, unemployment rate, job vacancy rate, and vacancy fill rate to understand where tightness and slack exist geographically.</p>
+        </div>
+        <div class="section-annotation">
+          <span class="annotation-tag">Choropleth</span>
+          <p>Darker shading = higher rate. Vacancy fill rate is GCCSA-level and may differ from state boundaries.</p>
+        </div>
+      </div>
+      <div class="chart-frame wide" id="chart4"></div>
+
+      <div class="divider-rule"></div>
+
+      <!-- ── SECTION 4b ── Slope Chart -->
+      <div class="section-label" style="margin-top:4rem;">04b / Long-Run State Change</div>
+      <div class="section-header">
+        <div class="section-title-block">
+          <h2>Employment Change by State:<br>2008 → 2024</h2>
+          <p class="section-desc">A slope chart strips away everything except the start and end point. Each line represents one state — steeper upward slopes mean stronger employment growth over 16 years. Crossings reveal states that overtook others.</p>
+        </div>
+        <div class="section-annotation">
+          <span class="annotation-tag">Slope Chart</span>
+          <p>2008 is the GFC baseline. States that recovered fastest are visible as the steepest positive slopes.</p>
+          <p>ACT is projected to overtake TAS by 2030</p> 
+          <!-- Did you know? -->
+        </div>
+      </div>
+      <div class="chart-frame" id="chart5"></div>
+    </section>
+
+    <!-- ── SECTION 5 ── Occupation Detail -->
+    <section id="section-5" class="chart-section">
+      <div class="section-label">05 / Occupation Detail</div>
+      <div class="section-header">
+        <div class="section-title-block">
+          <h2>Industry Employment<br>2008–2024</h2>
+          <p class="section-desc">Each line is an industry. Sixteen years of employment data reveals which sectors have grown, contracted, or plateaued. The rise in healthcare after 2020 is particularly striking.</p>
+        </div>
+        <div class="section-annotation">
+          <span class="annotation-tag">Multi-Line Chart</span>
+          <p>Hover a line to highlight one industry. Use the legend to isolate sectors of interest.</p>
+        </div>
+      </div>
+      <div class="chart-frame wide" id="chart6"></div>
+
+      <div class="divider-rule"></div>
+
+      <!-- ── SECTION 5b ── Dot Plots -->
+      <div class="section-label" style="margin-top:4rem;">05b / Occupation Rankings</div>
+      <div class="section-header">
+        <div class="section-title-block">
+          <h2>Top &amp; Bottom 10<br>Occupations</h2>
+          <p class="section-desc">Two dot plots, one ranked ascending, one descending. Select any metric — employment, part-time share, female share, median earnings, age, or annual growth — to instantly surface the leaders and laggards. The juxtaposition often surprises.</p>
+        </div>
+        <div class="section-annotation">
+          <span class="annotation-tag">Dot Plot × 2</span>
+          <p>Left = top 10 descending. Right = bottom 10 ascending. Same metric, opposite ends of the spectrum.</p>
+        </div>
+      </div>
+      <div class="dot-plot-grid">
+        <div>
+          <div class="chart-sublabel">Top 10 ↑</div>
+          <div class="chart-frame" id="chart7a"></div>
+        </div>
+        <div>
+          <div class="chart-sublabel">Bottom 10 ↓</div>
+          <div class="chart-frame" id="chart7b"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 6 ── Commuting -->
+    <section id="section-6" class="chart-section alt-bg">
+      <div class="section-label">06 / How Australians Get to Work</div>
+      <div class="section-header">
+        <div class="section-title-block">
+          <h2>Mode of Travel to Work:<br>2016 &amp; 2021</h2>
+          <p class="section-desc">Two census snapshots, five years apart. The shift away from public transport following COVID-19 is visible in the 2021 data. Work from home dominance grew steeply — a pattern seen globally</p>
+        </div>
+        <div class="section-annotation">
+          <span class="annotation-tag">Donut Chart × 2</span>
+          <p>Hover segments for exact percentages.</p>
+        </div>
+      </div>
+      <div class="donut-grid">
+        <div>
+          <div class="chart-sublabel">2016 Census</div>
+          <div class="chart-frame donut" id="chart8a"></div>
+        </div>
+        <div>
+          <div class="chart-sublabel">2021 Census</div>
+          <div class="chart-frame donut" id="chart8b"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">Australian Industry Insights</div>
+      <div class="footer-meta">Data sourced from the Australian Bureau of Statistics and Jobs and Skills Australia. Visualisations built with Vega-Lite.</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

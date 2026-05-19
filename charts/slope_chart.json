@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 500,
+  "padding": {"left": 50, "right": 50, "top": 20, "bottom": 20},
+  "data": {
+    "values": [
+      {"year": "Jun-08", "state": "NSW", "employment": 3127.8},
+      {"year": "Jun-08", "state": "Vic", "employment": 2445.8},
+      {"year": "Jun-08", "state": "Qld", "employment": 2023.9},
+      {"year": "Jun-08", "state": "SA",  "employment": 679.4},
+      {"year": "Jun-08", "state": "WA",  "employment": 1130.9},
+      {"year": "Jun-08", "state": "Tas", "employment": 193.3},
+      {"year": "Jun-08", "state": "NT",  "employment": 86.8},
+      {"year": "Jun-08", "state": "ACT", "employment": 143.1},
+      {"year": "Jun-24", "state": "NSW", "employment": 4286.5},
+      {"year": "Jun-24", "state": "Vic", "employment": 3393.3},
+      {"year": "Jun-24", "state": "Qld", "employment": 2630.2},
+      {"year": "Jun-24", "state": "SA",  "employment": 821.6},
+      {"year": "Jun-24", "state": "WA",  "employment": 1494.3},
+      {"year": "Jun-24", "state": "Tas", "employment": 242.9},
+      {"year": "Jun-24", "state": "NT",  "employment": 115.9},
+      {"year": "Jun-24", "state": "ACT", "employment": 211.3}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2},
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": {
+            "title": null,
+            "labelFontSize": 13,
+            "domain": false,
+            "ticks": false,
+            "orient": "top"
+          }
+        },
+        "y": {
+          "field": "employment",
+          "type": "quantitative",
+          "axis": {
+            "tickCount": 9,
+            "values": [0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500],
+            "title": null,
+            "domain": false,
+            "ticks": false,
+            "gridColor": "#e0e0e0",
+            "gridDash": [3, 3],
+            "labelFontSize": 11,
+            "labelColor": "#aaa",
+            "format": ",.0f"
+          },
+          "scale": {"domain": [0, 4500]}
+        },
+        "color": {
+          "field": "state",
+          "type": "nominal",
+          "scale": {
+            "domain": ["NSW", "Vic", "Qld", "WA", "SA", "Tas", "ACT", "NT"],
+            "range": ["#534AB7", "#1D9E75", "#D85A30", "#378ADD", "#D4537E", "#639922", "#BA7517", "#888780"]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom",
+            "columns": 4,
+            "labelFontSize": 12,
+            "symbolType": "circle",
+            "symbolSize":20
+            
+          }
+        },
+        "detail": {"field": "state"}
+      }
+    },
+    {
+      "mark": {"type": "circle", "size": 80},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "employment", "type": "quantitative"},
+        "color": {
+          "field": "state",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": ["NSW", "Vic", "Qld", "WA", "SA", "Tas", "ACT", "NT"],
+            "scheme":"accent"
+          }
+        },
+        "tooltip": [
+          {"field": "state", "title": "State"},
+          {"field": "year", "title": "Year"},
+          {"field": "employment", "title": "Employment (thousands)", "format": ",.1f"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "rule", "strokeWidth": 1, "color": "#ccc"},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null}
+  }
+}

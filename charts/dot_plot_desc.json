@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "../data/occupations_clean.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "employed": "number",
+        "parttime": "number",
+        "female": "number",
+        "earnings": "number",
+        "age": "number",
+        "growth": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "metric",
+      "value": "employed",
+      "bind": {
+        "input": "select",
+        "options": [
+          "employed",
+          "parttime",
+          "female",
+          "earnings",
+          "age",
+          "growth"
+        ],
+        "labels": [
+          "Employed",
+          "Part-time share (%)",
+          "Female share (%)",
+          "Median weekly earnings ($)",
+          "Median age",
+          "Annual growth"
+        ],
+        "name": "Metric: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "datum[metric]",
+      "as": "selected_value"
+    },
+    {
+      "filter": "datum.selected_value !== 'N/A' && datum.selected_value != null"
+    },
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "selected_value",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rank <= 10"
+    }
+  ],
+  "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 100
+  },
+  "encoding": {
+    "x": {
+      "field": "occupation",
+      "type": "nominal",
+      "sort": {
+        "field": "selected_value",
+        "order": "descending"
+      },
+      "axis": {
+        "labelAngle": -35,
+        "title": null
+      }
+    },
+    "y": {
+      "field": "selected_value",
+      "type": "quantitative",
+      "title": "Value"
+    },
+    "tooltip": [
+      {
+        "field": "occupation",
+        "type": "nominal"
+      },
+      {
+        "field": "selected_value",
+        "type": "quantitative",
+        "title": "Value"
+      }
+    ]
+  }
+}

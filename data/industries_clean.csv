@@ -1,0 +1,82 @@
+﻿Sector,Industry,Employment at end of June(000),Wages and Salaries($m),Sales and Service Income($m),TotalIncome($m),TotalExpenses($m),Operating Profitbefore Tax($m),EBITDA($m),IndustryValue Added($m),Corrected industries
+Accommodation and Food Services,44 Accommodation,131.3,6367.0,24233.0,26110.0,22625.0,3485.0,4212.0,12133.0,Accommodation
+Accommodation and Food Services,45 Food and beverage services,1086.7,32700.0,128732.0,130102.0,121968.0,8358.0,13195.0,51303.0,Food and beverage services
+Administrative and Support Services,72 Administrative services,779.3,60117.0,116181.0,119531.0,111743.0,7844.0,8612.0,79479.0,Administrative services
+Administrative and Support Services,73 Building cleaning pest control and other support services,227.1,8340.0,28086.0,28307.0,23759.0,4481.0,4757.0,14846.0,Building cleaning pest control and other support services
+Agriculture Forestry and Fishing,01 Agriculture,337.1,8168.0,98448.0,104830.0,96018.0,8539.0,13689.0,24976.0,Agriculture
+Agriculture Forestry and Fishing,02 Aquaculture,7.5,519.0,2594.0,2727.0,2643.0,67.0,226.0,811.0,Aquaculture
+Agriculture Forestry and Fishing,03 Forestry and logging,10.2,690.0,4083.0,4849.0,4053.0,813.0,744.0,1600.0,Forestry and logging
+Agriculture Forestry and Fishing,04 Fishing hunting and trapping,9.4,301.0,2478.0,2629.0,2084.0,540.0,597.0,992.0,Fishing hunting and trapping
+Agriculture Forestry and Fishing,05 Agriculture forestry and fishing support services,46.7,1993.0,12167.0,12476.0,10675.0,1705.0,2211.0,4678.0,Agriculture forestry and fishing support services
+Arts and Recreation Services,89 Heritage activities,10.9,580.0,1211.0,1627.0,1521.0,106.0,20.0,839.0,Heritage activities
+Arts and Recreation Services,90 Creative and performing arts activities,47.1,1525.0,5847.0,6635.0,4812.0,1798.0,1674.0,3557.0,Creative and performing arts activities
+Arts and Recreation Services,91 Sports and recreation activities,186.5,6658.0,25127.0,28441.0,25694.0,2757.0,2385.0,10364.0,Sports and recreation activities
+Arts and Recreation Services,92 Gambling activities,32.8,2507.0,17800.0,17526.0,16485.0,1034.0,2644.0,5730.0,Gambling activities
+Auxiliary Finance and Insurance Services,64 Auxiliary Finance and Insurance Services,174.6,22827.0,80877.0,94804.0,75157.0,19617.0,14029.0,41438.0,Auxiliary Finance and Insurance Services
+Construction,30 Building construction,254.5,20327.0,233129.0,235163.0,218787.0,14612.0,16544.0,41829.0,Building construction
+Construction,31 Heavy and civil engineering construction,153.7,20055.0,120067.0,122366.0,114353.0,8253.0,9274.0,32839.0,Heavy and civil engineering construction
+Construction,32 Construction services,882.5,53545.0,271395.0,276112.0,237609.0,35162.0,37594.0,102479.0,Construction services
+Education and Training (Private),80 Preschool and school education (private),307.4,22093.0,37406.0,39614.0,36392.0,3233.0,4098.0,29365.0,Preschool and school education (private)
+Education and Training (Private),81 Tertiary education (private),76.6,5134.0,12644.0,13295.0,12423.0,875.0,1198.0,7249.0,Tertiary education (private)
+Education and Training (Private),82 Adult community and other education (private),131.9,4429.0,12171.0,12852.0,10855.0,2001.0,2000.0,7312.0,Adult community and other education (private)
+Electricity Gas Water and Waste Services,26 Electricity supply,59.9,8409.0,105216.0,110766.0,105017.0,5964.0,18620.0,29847.0,Electricity supply
+Electricity Gas Water and Waste Services,27 Gas supply,3.3,331.0,13973.0,14336.0,12478.0,1939.0,2494.0,3026.0,Gas supply
+Electricity Gas Water and Waste Services,28 Water supply sewerage and drainage services,37.1,4165.0,26169.0,30257.0,25179.0,5079.0,10927.0,15974.0,Water supply sewerage and drainage services
+Electricity Gas Water and Waste Services,29 Waste collection treatment and disposal services,42.2,3655.0,21330.0,21451.0,20015.0,1427.0,2880.0,7207.0,Waste collection treatment and disposal services
+Health Care and Social Assistance (Private),84 Hospitals (private),154.5,11283.0,23191.0,24128.0,24164.0,-34.0,1210.0,13962.0,Hospitals (private)
+Health Care and Social Assistance (Private),85 Medical and other health care services (private),573.2,29086.0,104203.0,107335.0,77493.0,29924.0,31997.0,66318.0,Medical and other health care services (private)
+Health Care and Social Assistance (Private),86 Residential care services (private),389.8,23059.0,39769.0,44367.0,42045.0,2332.0,1378.0,28245.0,Residential care services (private)
+Health Care and Social Assistance (Private),87 Social assistance services (private),679.5,33536.0,56838.0,62337.0,57193.0,5151.0,2713.0,43547.0,Social assistance services (private)
+Information Media and Telecommunications,54 Publishing (except internet and music publishing),43.7,8369.0,33305.0,33412.0,33255.0,,1249.0,11120.0,Publishing (except internet and music publishing)
+Information Media and Telecommunications,55 Motion picture and sound recording activities,45.3,2571.0,9996.0,10613.0,9873.0,,1034.0,4005.0,Motion picture and sound recording activities
+Information Media and Telecommunications,56 Broadcasting (except internet),16.1,1644.0,8169.0,7552.0,7961.0,,1265.0,3115.0,Broadcasting (except internet)
+Information Media and Telecommunications,57 Internet publishing and broadcasting,6.9,835.0,4557.0,4616.0,4173.0,,641.0,1695.0,Internet publishing and broadcasting
+Information Media and Telecommunications,58 Telecommunications services,51.4,7115.0,45703.0,47305.0,45953.0,,15432.0,23144.0,Telecommunications services
+Information Media and Telecommunications,59 Internet service providers web search portals and data processing services,22.9,2936.0,15863.0,17246.0,15459.0,1738.0,3942.0,6602.0,Internet service providers web search portals and data processing services
+Information Media and Telecommunications,60 Library and other information services,1.9,125.0,301.0,350.0,314.0,,43.0,189.0,Library and other information services
+Manufacturing,11 Food product manufacturing,224.5,15606.0,130510.0,131072.0,125064.0,6113.0,10372.0,28880.0,Food product manufacturing
+Manufacturing,12 Beverage and tobacco product manufacturing,40.5,3018.0,22385.0,23277.0,22007.0,1330.0,2132.0,5752.0,Beverage and tobacco product manufacturing
+Manufacturing,13 Textile leather clothing and footwear manufacturing,27.3,1452.0,7983.0,8046.0,7226.0,691.0,881.0,2586.0,Textile leather clothing and footwear manufacturing
+Manufacturing,14 Wood product manufacturing,47.1,3253.0,16755.0,16774.0,15141.0,1734.0,2356.0,6375.0,Wood product manufacturing
+Manufacturing,15 Pulp paper and converted paper product manufacturing,15.1,1638.0,11303.0,11364.0,10819.0,455.0,936.0,2845.0,Pulp paper and converted paper product manufacturing
+Manufacturing,16 Printing (including the reproduction of recorded media),26.0,1726.0,6740.0,6705.0,6340.0,412.0,725.0,2732.0,Printing (including the reproduction of recorded media)
+Manufacturing,17 Petroleum and coal product manufacturing,3.7,464.0,17335.0,17479.0,,862.0,950.0,1526.0,Petroleum and coal product manufacturing
+Manufacturing,18 Basic chemical and chemical product manufacturing,50.3,5655.0,38859.0,39910.0,38680.0,1270.0,3216.0,9914.0,Basic chemical and chemical product manufacturing
+Manufacturing,19 Polymer product and rubber product manufacturing,40.0,3181.0,17423.0,17839.0,15880.0,1745.0,2005.0,5843.0,Polymer product and rubber product manufacturing
+Manufacturing,19 Polymer product and rubber product manufacturing,43.5,4066.0,26692.0,27394.0,24396.0,3003.0,3762.0,8669.0,Polymer product and rubber product manufacturing
+Manufacturing,21 Primary metal and metal product manufacturing,42.4,4795.0,75465.0,75923.0,75105.0,1689.0,3616.0,9427.0,Primary metal and metal product manufacturing
+Manufacturing,22 Fabricated metal product manufacturing,109.7,8069.0,42250.0,42696.0,38627.0,3986.0,4651.0,14291.0,Fabricated metal product manufacturing
+Manufacturing,23 Transport equipment manufacturing,88.0,7847.0,39562.0,40667.0,37402.0,3416.0,3818.0,13125.0,Transport equipment manufacturing
+Manufacturing,24 Machinery and equipment manufacturing,106.7,10654.0,51118.0,51892.0,46702.0,5633.0,6418.0,19012.0,Machinery and equipment manufacturing
+Manufacturing,25 Furniture and other manufacturing,36.8,2099.0,9817.0,9933.0,,1218.0,1234.0,3775.0,Furniture and other manufacturing
+Mining,06 Coal mining,45.9,7810.0,115667.0,120614.0,91902.0,29151.0,35803.0,59446.0,Coal mining
+Mining,07 Oil and gas extraction,19.4,4412.0,115068.0,121040.0,74201.0,46756.0,74745.0,83344.0,Oil and gas extraction
+Mining,08 Metal ore mining,101.0,16985.0,213916.0,221322.0,134578.0,88982.0,109363.0,144002.0,Metal ore mining
+Mining,09 Non-metallic mineral mining and quarrying,15.7,1630.0,22822.0,23287.0,12385.0,11264.0,12380.0,15186.0,Non-metallic mineral mining and quarrying
+Mining,10 Exploration and other mining support services,52.7,7551.0,24688.0,27128.0,26853.0,618.0,651.0,10267.0,Exploration and other mining support services
+Other Services,94 Repair and maintenance,224.4,13544.0,58753.0,59689.0,53208.0,6639.0,7009.0,23282.0,Repair and maintenance
+Other Services,95 Personal and other services,358.7,18090.0,41289.0,54758.0,49907.0,4838.0,-1724.0,25694.0,Personal and other services
+Professional Scientific and Technical Services,69 Professional scientific and technical services (except computer system design and related services),1062.1,92734.0,268118.0,314916.0,249868.0,65236.0,37671.0,150389.0,Professional scientific and technical services (except computer system design and related services)
+Professional Scientific and Technical Services,70 Computer system design and related services,255.3,31994.0,84927.0,86559.0,79273.0,7343.0,8200.0,46199.0,Computer system design and related services
+Public Administration and Safety (Private),77 Public order safety and regulatory services (private),106.8,6503.0,15351.0,15534.0,14287.0,1250.0,1474.0,9282.0,Public order safety and regulatory services (private)
+Rental Hiring and Real Estate Services,66 Rental and hiring services (except real estate),90.4,6994.0,41173.0,44139.0,34924.0,9134.0,13454.0,20899.0,Rental and hiring services (except real estate)
+Rental Hiring and Real Estate Services,67 Property operators and real estate services,330.5,17102.0,144112.0,146105.0,112248.0,34211.0,62286.0,88683.0,Property operators and real estate services
+Retail Trade,39 Motor vehicle and motor vehicle parts retailing,119.0,8489.0,124548.0,126169.0,123340.0,5978.0,6165.0,16363.0,Motor vehicle and motor vehicle parts retailing
+Retail Trade,40 Fuel retailing,56.1,2054.0,59282.0,59516.0,57811.0,1486.0,2415.0,4591.0,Fuel retailing
+Retail Trade,41 Food retailing,514.1,19204.0,180804.0,182166.0,174188.0,8498.0,12506.0,34076.0,Food retailing
+Retail Trade,42 Other store-based retailing,754.2,33111.0,246294.0,248317.0,227508.0,20028.0,26460.0,62357.0,Other store-based retailing
+Retail Trade,43 Non-store retailing and retail commission-based buying and/or selling,66.2,3305.0,32493.0,32614.0,30104.0,2214.0,2644.0,6652.0,Non-store retailing and retail commission-based buying and/or selling
+Transport Postal and Warehousing,46 Road transport,291.0,18513.0,86587.0,88627.0,81946.0,6763.0,10212.0,32305.0,Road transport
+Transport Postal and Warehousing,47 Rail transport,45.6,6223.0,22148.0,22795.0,21935.0,929.0,3783.0,10870.0,Rail transport
+Transport Postal and Warehousing,48 Water transport,8.1,1002.0,3943.0,4094.0,3972.0,128.0,501.0,1569.0,Water transport
+Transport Postal and Warehousing,49 Air and space transport,41.9,5322.0,33328.0,33680.0,30579.0,3182.0,5648.0,11479.0,Air and space transport
+Transport Postal and Warehousing,50 Other transport,18.4,1224.0,6407.0,6556.0,5365.0,1225.0,2773.0,4337.0,Other transport
+Transport Postal and Warehousing,51 Postal and courier pick-up and delivery services,108.4,4669.0,23453.0,23600.0,21572.0,2007.0,2836.0,8302.0,Postal and courier pick-up and delivery services
+Transport Postal and Warehousing,52 Transport support services,132.2,9206.0,59619.0,80610.0,57575.0,23021.0,16294.0,27442.0,Transport support services
+Transport Postal and Warehousing,53 Warehousing and storage services,25.1,2085.0,9494.0,9853.0,8893.0,937.0,1359.0,3852.0,Warehousing and storage services
+Wholesale Trade,33 Basic material wholesaling,128.3,10285.0,258780.0,262910.0,245967.0,13482.0,13107.0,25564.0,Basic material wholesaling
+Wholesale Trade,34 Machinery and equipment wholesaling,186.6,19787.0,180791.0,182420.0,171475.0,12700.0,14692.0,37922.0,Machinery and equipment wholesaling
+Wholesale Trade,35 Motor vehicle and motor vehicle parts wholesaling,53.0,4473.0,96615.0,97026.0,95719.0,3960.0,5008.0,10141.0,Motor vehicle and motor vehicle parts wholesaling
+Wholesale Trade,36 Grocery liquor and tobacco product wholesaling,95.4,6823.0,102991.0,104461.0,99320.0,5123.0,5142.0,13380.0,Grocery liquor and tobacco product wholesaling
+Wholesale Trade,37 Other goods wholesaling,109.2,8957.0,107368.0,109154.0,102427.0,6788.0,6897.0,17361.0,Other goods wholesaling
+Wholesale Trade,38 Commission-based wholesaling,31.7,1936.0,25709.0,26132.0,23913.0,2323.0,2421.0,4757.0,Commission-based wholesaling

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 1000,
+  "data": {
+    "url": "../data/inout.csv"
+  },
+  "transform": [
+    {
+      "calculate": "toDate('01 ' + datum['data'], '%d %b-%y')",
+      "as": "parsed_date"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "bar", "color": "#aec7e8","tooltip":true},
+      "encoding": {
+        "x": {
+          "field": "parsed_date",
+          "type": "temporal",
+          "title": "Month",
+          "axis": {
+            "format": "%b %Y",
+            "labelAngle": -45,
+            "tickCount": "month"
+          }
+        },
+        "y": {
+          "field": "inflow",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {"type": "bar", "color": "#e6b57d","tooltip":true},
+      "encoding": {
+        "x": {
+          "field": "parsed_date",
+          "type": "temporal",
+          "title": "Month",
+          "axis": {
+            "format": "%b %Y",
+            "labelAngle": -45,
+            "tickCount": "month"
+          }
+        },
+        "y": {
+          "field": "outflow",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color":"#7572a1",
+        "tooltip":true
+      },
+      "encoding": {
+        "x": {
+          "field": "parsed_date",
+          "type": "temporal",
+          "title": "Month",
+          "axis": {
+            "format": "%b %Y",
+            "labelAngle": -45,
+            "tickCount": "month"
+          }
+        },
+        "y": {
+          "field": "employment",
+          "type": "quantitative",
+          "title": "Employment ('000)"
+        }
+      }
+    }
+  ]
+}

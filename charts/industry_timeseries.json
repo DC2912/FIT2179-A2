@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "padding": {"left": 20, "right": 20, "top": 20, "bottom": 20},
+  "data": {"url": "../data/timeseries_ind.csv"},
+  "params": [
+    {
+      "name": "industrySelection",
+      "select": {"type": "point", "fields": ["industry"]},
+      "bind": "legend"
+    }
+  ],
+  "transform": [
+    {
+      "fold": [
+        "Agriculture, forestry and fishing",
+        "Mining",
+        "Manufacturing",
+        "Electricity, gas, water and waste services",
+        "Construction",
+        "Wholesale trade",
+        "Retail trade",
+        "Accommodation and food services",
+        "Transport, postal and warehousing",
+        "Information media and telecommunications",
+        "Subdivision 64 Auxiliary finance and insurance services",
+        "Rental, hiring and real estate services",
+        "Professional, scientific and technical services",
+        "Administrative and support services",
+        "Public administration and safety (private)",
+        "Education and training (private)",
+        "Health care and social assistance (private)",
+        "Arts and recreation services",
+        "Other services"
+      ],
+      "as": ["industry", "employment"]
+    },
+    {"calculate": "toNumber(datum.employment)", "as": "employment_num"},
+    {"calculate": "timeParse(datum.Year, '%b-%Y')", "as": "year_parsed"}
+  ],
+  "mark": {"type": "line", "strokeWidth": 2},
+  "encoding": {
+    "x": {
+      "field": "year_parsed",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "format": "%Y",
+        "labelFontSize": 11,
+        "labelColor": "#aaa",
+        "domain": false,
+        "ticks": false,
+        "gridColor": "#e0e0e0",
+        "gridDash": [3, 3]
+      }
+    },
+    "y": {
+      "field": "employment_num",
+      "type": "quantitative",
+      "axis": {
+        "title": "Employment (thousands)",
+        "labelFontSize": 11,
+        "labelColor": "#aaa",
+        "domain": false,
+        "ticks": false,
+        "gridColor": "#e0e0e0",
+        "gridDash": [3, 3]
+      }
+    },
+    "color": {
+      "field": "industry",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Agriculture, forestry and fishing",
+          "Mining",
+          "Manufacturing",
+          "Electricity, gas, water and waste services",
+          "Construction",
+          "Wholesale trade",
+          "Retail trade",
+          "Accommodation and food services",
+          "Transport, postal and warehousing",
+          "Information media and telecommunications",
+          "Subdivision 64 Auxiliary finance and insurance services",
+          "Rental, hiring and real estate services",
+          "Professional, scientific and technical services",
+          "Administrative and support services",
+          "Public administration and safety (private)",
+          "Education and training (private)",
+          "Health care and social assistance (private)",
+          "Arts and recreation services",
+          "Other services"
+        ],
+        "scheme":"category20c"
+      },
+      "legend": {
+        "title": null,
+        "orient": "bottom",
+        "columns": 2,
+        "labelFontSize": 11,
+        "symbolType": "stroke",
+        "symbolStrokeWidth": 3
+      }
+    },
+    "opacity": {
+      "condition": {"param": "industrySelection", "value": 1},
+      "value": 0.1
+    },
+    "tooltip": [
+      {"field": "year_parsed", "type": "temporal", "title": "Year", "format": "%b %Y"},
+      {"field": "industry", "title": "Industry"},
+      {"field": "employment_num", "type": "quantitative", "title": "Employment (thousands)", "format": ",.1f"}
+    ]
+  },
+  "config": {"view": {"stroke": null}}
+}

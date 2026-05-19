@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 300,
+  "data": {
+    "values": [
+      {"way": "Car, as driver", "2021": 53.1, "2016": 62},
+      {"way": "Worked at home", "2021": 21, "2016": 4.7},
+      {"way": "Did not go to work", "2021": 11.8, "2016": 9.4},
+      {"way": "Car, as passenger", "2021": 3.9, "2016": 4.6},
+      {"way": "Walked only", "2021": 2.5, "2016": 3.5},
+      {"way": "Train", "2021": 2.5, "2016": 7.2},
+      {"way": "Bus", "2021": 1.8, "2016": 3.5},
+      {"way": "Other", "2021": 3.5, "2016": 5.1}
+    ]
+  },
+  "mark": {"type": "arc", "innerRadius": 80},
+  "encoding": {
+    "theta": {"field": "2021", "type": "quantitative"},
+    "color": {
+      "field": "way",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Car, as driver","Worked at home","Did not go to work","Car, as passenger","Walked only","Train","Bus","Other"],
+        "scheme":"accent"
+      },
+      "legend": {"title": null, "orient": "right", "labelFontSize": 11}
+    },
+    "tooltip": [
+      {"field": "way", "title": "Way"},
+      {"field": "2021", "title": "2021 (%)", "format": ".1f"}
+    ]
+  },
+  "config": {"view": {"stroke": null}}
+}

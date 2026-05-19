@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 600,
+  "height": 500,
+  "params": [
+    {
+      "name": "metric",
+      "value": "Total",
+      "bind": {
+        "input": "select",
+        "options": ["Total", "0to4", "5to19", "20to199", "200plus"],
+        "labels": ["Total", "0–4 Employees", "5–19 Employees", "20–199 Employees", "200+ Employees"],
+        "name": "Metric: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "../data/aus_states.json",
+        "format": { "type": "topojson", "feature": "STE_2021_AUST_GDA2020" }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e8e8e8",
+        "stroke": "white",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"state": "New South Wales",             "lat": -31.9, "lon": 146.9, "Total": 4287, "0to4": 1000, "5to19": 733, "20to199": 1085, "200plus": 1469},
+          {"state": "Victoria",                    "lat": -37.0, "lon": 144.5, "Total": 3393, "0to4": 762,  "5to19": 567, "20to199": 897,  "200plus": 1167},
+          {"state": "Queensland",                  "lat": -22.0, "lon": 144.0, "Total": 2630, "0to4": 604,  "5to19": 442, "20to199": 669,  "200plus": 916},
+          {"state": "South Australia",             "lat": -30.0, "lon": 135.5, "Total": 822,  "0to4": 176,  "5to19": 134, "20to199": 203,  "200plus": 308},
+          {"state": "Western Australia",           "lat": -25.0, "lon": 121.0, "Total": 1494, "0to4": 297,  "5to19": 228, "20to199": 374,  "200plus": 596},
+          {"state": "Tasmania",                    "lat": -42.0, "lon": 146.5, "Total": 243,  "0to4": 55,   "5to19": 45,  "20to199": 62,   "200plus": 82},
+          {"state": "Northern Territory",          "lat": -19.5, "lon": 133.5, "Total": 116,  "0to4": 21,   "5to19": 19,  "20to199": 32,   "200plus": 44},
+          {"state": "Australian Capital Territory","lat": -35.5, "lon": 149.0, "Total": 211,  "0to4": 45,   "5to19": 39,  "20to199": 55,   "200plus": 74}
+        ]
+      },
+      "transform": [
+        {"calculate": "datum[metric]", "as": "selected_value"}
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": 0.7,
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "size": {
+          "field": "selected_value",
+          "type": "quantitative",
+          "scale": {"range": [100, 5000]},
+          "legend": {"title": "Employees ('000)"}
+        },
+        "color": {"value": "#378ADD"},
+        "tooltip": [
+          {"field": "state", "type": "nominal", "title": "State"},
+          {"field": "selected_value", "type": "quantitative", "title": "Employees ('000)"}
+        ]
+      }
+    }
+  ],
+  "projection": {"type": "mercator"}
+}

@@ -1,0 +1,329 @@
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink:        #0f0e0c;
+  --ink-mid:    #3a3830;
+  --ink-soft:   #7a7568;
+  --paper:      #f5f2ec;
+  --paper-alt:  #edeae2;
+  --accent:     #c8522a;
+  --accent-2:   #2a6e5e;
+  --rule:       #d4cfc4;
+  --chart-bg:   #ffffff;
+
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-ui:      'Syne', sans-serif;
+  --font-mono:    'DM Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ── Hero ── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 8vw 4rem;
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.hero-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(245,242,236,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245,242,236,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0; right: 0;
+  height: 120px;
+  background: var(--paper);
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 1.05;
+  font-weight: 400;
+  max-width: 14ch;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: rgba(245,242,236,0.65);
+  max-width: 52ch;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+}
+
+.hero-scroll {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: rgba(245,242,236,0.4);
+  letter-spacing: 0.08em;
+  animation: bob 2s ease-in-out infinite;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* ── Sticky Nav ── */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--ink);
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: 1px solid rgba(245,242,236,0.1);
+}
+
+.sticky-nav::-webkit-scrollbar { display: none; }
+
+.sticky-nav a {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(245,242,236,0.5);
+  text-decoration: none;
+  padding: 0.9rem 1.4rem;
+  white-space: nowrap;
+  transition: color 0.2s, background 0.2s;
+  border-right: 1px solid rgba(245,242,236,0.07);
+}
+
+.sticky-nav a:hover {
+  color: var(--paper);
+  background: rgba(245,242,236,0.06);
+}
+
+/* ── Sections ── */
+.chart-section {
+  padding: 6rem 8vw;
+  animation: fadeUp 0.6s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.chart-section.alt-bg {
+  background: var(--paper-alt);
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .section-header { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+.section-title-block h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.section-desc {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  max-width: 52ch;
+}
+
+.section-annotation {
+  background: var(--chart-bg);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  padding: 1.25rem 1.5rem;
+  border-radius: 2px;
+  align-self: start;
+  margin-top: 0.5rem;
+}
+
+.annotation-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(200,82,42,0.08);
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  margin-bottom: 0.75rem;
+}
+
+.section-annotation p {
+  font-size: 0.85rem;
+  color: var(--ink-mid);
+  line-height: 1.65;
+}
+
+/* ── Chart Frames ── */
+.chart-frame {
+  background: var(--chart-bg);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 1.5rem;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.chart-frame.wide {
+  min-height: 500px;
+}
+
+.chart-frame.donut {
+  min-height: 360px;
+}
+
+.chart-frame::before {
+  content: 'Loading visualisation…';
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--rule);
+  letter-spacing: 0.08em;
+  pointer-events: none;
+}
+
+.chart-frame > * { position: relative; z-index: 1; }
+
+/* ── Dot Plot Grid ── */
+.dot-plot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .dot-plot-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Donut Grid ── */
+.donut-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .donut-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Sublabels ── */
+.chart-sublabel {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 0.75rem;
+}
+
+/* ── Divider ── */
+.divider-rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 5rem 0 0;
+}
+
+/* ── Footer ── */
+.site-footer {
+  background: var(--ink);
+  color: rgba(245,242,236,0.4);
+  padding: 3rem 8vw;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--paper);
+}
+
+.footer-meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+}
+
+/* ── Vega overrides ── */
+.vega-embed {
+  width: 100% !important;
+}
+
+.vega-embed canvas,
+.vega-embed svg {
+  max-width: 100%;
+}

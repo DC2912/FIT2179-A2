@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 600,
+  "height": 400,
+  "params": [
+    {
+      "name": "metric",
+      "value": "Working Age Employment Rate (%)",
+      "bind": {
+        "input": "select",
+        "options":  ["Working Age Employment Rate (%)", "Unemployment Rate (%)", "Job Vacancy Rate (%)", "Vacancy Fill Rate (%) (GCCSA)"],
+        "labels": ["Working Age Employment Rate (%)", "Unemployment Rate (%)", "Job Vacancy Rate (%)", "Vacancy Fill Rate (%)"],
+        "name": "Metric: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "../data/aus_states.json",
+        "format": {
+          "type": "topojson",
+          "feature": "STE_2021_AUST_GDA2020" 
+        }
+      },
+
+      "mark": {
+        "type": "geoshape",
+        "fill": "#ffffff",
+        "stroke": "#00000034",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "url": "../data/aus_s4.json",
+        "format": { "type": "topojson", "feature": "SA4_2021_AUST_GDA2020" }
+      },
+      "transform": [
+        {
+          "lookup": "properties.SA4_CODE21",
+          "from": {
+            "data": {
+              "url": "../data/SA4_data.csv"
+            },
+            "key": "SA4 Code",
+            "fields": ["Working Age Employment Rate (%)", "Unemployment Rate (%)", "Job Vacancy Rate (%)", "Vacancy Fill Rate (%) (GCCSA)"]
+          }
+        },
+        {
+          "calculate": "datum[metric]",
+          "as": "selected_value"
+        }
+      ],
+      "mark": { "type": "geoshape" },
+      "encoding": {
+        "color": {
+          "field": "selected_value",
+          "type": "quantitative",
+          "scale": { "scheme": "blues" },
+          "title": "Value"
+        },
+        "tooltip": [
+          {"field": "properties.SA4_NAME21", "type": "nominal", "title": "Area"},
+          {"field": "selected_value", "type": "quantitative", "title": "Value"}
+        ]
+      }
+    }
+  ],
+  "projection": { "type": "mercator" }
+}

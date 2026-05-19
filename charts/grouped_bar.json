@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "data": {
+    "url": "../data/industries_normalized.json",
+    "format": {
+      "type": "json",
+      "property": "data.values"
+    }
+  },
+  "params": [
+    {
+      "name": "sectorFilter",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All Sectors",
+          "Accommodation and Food Services",
+          "Administrative and Support Services",
+          "Agriculture Forestry and Fishing",
+          "Arts and Recreation Services",
+          "Auxiliary Finance and Insurance Services",
+          "Construction",
+          "Education and Training (Private)",
+          "Electricity Gas Water and Waste Services",
+          "Health Care and Social Assistance (Private)",
+          "Information Media and Telecommunications",
+          "Manufacturing",
+          "Mining",
+          "Other Services",
+          "Professional Scientific and Technical Services",
+          "Public Administration and Safety (Private)",
+          "Rental Hiring and Real Estate Services",
+          "Retail Trade",
+          "Transport Postal and Warehousing",
+          "Wholesale Trade"
+        ],
+        "labels": [
+          "All Sectors",
+          "Accommodation and Food Services",
+          "Administrative and Support Services",
+          "Agriculture Forestry and Fishing",
+          "Arts and Recreation Services",
+          "Auxiliary Finance and Insurance Services",
+          "Construction",
+          "Education and Training (Private)",
+          "Electricity Gas Water and Waste Services",
+          "Health Care and Social Assistance (Private)",
+          "Information Media and Telecommunications",
+          "Manufacturing",
+          "Mining",
+          "Other Services",
+          "Professional Scientific and Technical Services",
+          "Public Administration and Safety (Private)",
+          "Rental Hiring and Real Estate Services",
+          "Retail Trade",
+          "Transport Postal and Warehousing",
+          "Wholesale Trade"
+        ],
+        "name": "Sector: "
+      },
+      "value": null
+    }
+  ],
+  "transform": [
+    {
+      "filter": "!sectorFilter || datum.sector == sectorFilter"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "industry",
+      "type": "nominal",
+      "sort": "-y",
+      "axis": {
+  "labelAngle": -45
+}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Normalized Value"
+    },
+    "xOffset": {
+      "field": "group"
+    },
+    "color": {
+      "field": "group"
+    }
+  }
+}

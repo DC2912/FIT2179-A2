@@ -1,0 +1,1728 @@
+{
+  "data": {
+    "values": [
+      {
+        "sector": "Accommodation and Food Services",
+        "industry": "Accommodation",
+        "group": "Employment",
+        "value": 12.08,
+        "raw_value": 131.3
+      },
+      {
+        "sector": "Accommodation and Food Services",
+        "industry": "Accommodation",
+        "group": "Wages",
+        "value": 6.87,
+        "raw_value": 6367.0
+      },
+      {
+        "sector": "Accommodation and Food Services",
+        "industry": "Accommodation",
+        "group": "Sales and service income",
+        "value": 8.93,
+        "raw_value": 24233.0
+      },
+      {
+        "sector": "Accommodation and Food Services",
+        "industry": "Food and beverage",
+        "group": "Employment",
+        "value": 100.0,
+        "raw_value": 1086.7
+      },
+      {
+        "sector": "Accommodation and Food Services",
+        "industry": "Food and beverage",
+        "group": "Wages",
+        "value": 35.26,
+        "raw_value": 32700.0
+      },
+      {
+        "sector": "Accommodation and Food Services",
+        "industry": "Food and beverage",
+        "group": "Sales and service income",
+        "value": 47.43,
+        "raw_value": 128732.0
+      },
+      {
+        "sector": "Administrative and Support Services",
+        "industry": "Administrative services",
+        "group": "Employment",
+        "value": 71.71,
+        "raw_value": 779.3
+      },
+      {
+        "sector": "Administrative and Support Services",
+        "industry": "Administrative services",
+        "group": "Wages",
+        "value": 64.83,
+        "raw_value": 60117.0
+      },
+      {
+        "sector": "Administrative and Support Services",
+        "industry": "Administrative services",
+        "group": "Sales and service income",
+        "value": 42.81,
+        "raw_value": 116181.0
+      },
+      {
+        "sector": "Administrative and Support Services",
+        "industry": "Building cleaning pest control/ other support",
+        "group": "Employment",
+        "value": 20.9,
+        "raw_value": 227.1
+      },
+      {
+        "sector": "Administrative and Support Services",
+        "industry": "Building cleaning pest control/ other support",
+        "group": "Wages",
+        "value": 8.99,
+        "raw_value": 8340.0
+      },
+      {
+        "sector": "Administrative and Support Services",
+        "industry": "Building cleaning pest control/ other support",
+        "group": "Sales and service income",
+        "value": 10.35,
+        "raw_value": 28086.0
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Agriculture",
+        "group": "Employment",
+        "value": 31.02,
+        "raw_value": 337.1
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Agriculture",
+        "group": "Wages",
+        "value": 8.81,
+        "raw_value": 8168.0
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Agriculture",
+        "group": "Sales and service income",
+        "value": 36.27,
+        "raw_value": 98448.0
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Aquaculture",
+        "group": "Employment",
+        "value": 0.69,
+        "raw_value": 7.5
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Aquaculture",
+        "group": "Wages",
+        "value": 0.56,
+        "raw_value": 519.0
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Aquaculture",
+        "group": "Sales and service income",
+        "value": 0.96,
+        "raw_value": 2594.0
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Forestry and logging",
+        "group": "Employment",
+        "value": 0.94,
+        "raw_value": 10.2
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Forestry and logging",
+        "group": "Wages",
+        "value": 0.74,
+        "raw_value": 690.0
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Forestry and logging",
+        "group": "Sales and service income",
+        "value": 1.5,
+        "raw_value": 4083.0
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Fishing hunting and trapping",
+        "group": "Employment",
+        "value": 0.87,
+        "raw_value": 9.4
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Fishing hunting and trapping",
+        "group": "Wages",
+        "value": 0.32,
+        "raw_value": 301.0
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Fishing hunting and trapping",
+        "group": "Sales and service income",
+        "value": 0.91,
+        "raw_value": 2478.0
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Agriculture forestry and fishing support",
+        "group": "Employment",
+        "value": 4.3,
+        "raw_value": 46.7
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Agriculture forestry and fishing support",
+        "group": "Wages",
+        "value": 2.15,
+        "raw_value": 1993.0
+      },
+      {
+        "sector": "Agriculture Forestry and Fishing",
+        "industry": "Agriculture forestry and fishing support",
+        "group": "Sales and service income",
+        "value": 4.48,
+        "raw_value": 12167.0
+      },
+      {
+        "sector": "Arts and Recreation Services",
+        "industry": "Heritage activities",
+        "group": "Employment",
+        "value": 1.0,
+        "raw_value": 10.9
+      },
+      {
+        "sector": "Arts and Recreation Services",
+        "industry": "Heritage activities",
+        "group": "Wages",
+        "value": 0.63,
+        "raw_value": 580.0
+      },
+      {
+        "sector": "Arts and Recreation Services",
+        "industry": "Heritage activities",
+        "group": "Sales and service income",
+        "value": 0.45,
+        "raw_value": 1211.0
+      },
+      {
+        "sector": "Arts and Recreation Services",
+        "industry": "Creative and performing arts activities",
+        "group": "Employment",
+        "value": 4.33,
+        "raw_value": 47.1
+      },
+      {
+        "sector": "Arts and Recreation Services",
+        "industry": "Creative and performing arts activities",
+        "group": "Wages",
+        "value": 1.64,
+        "raw_value": 1525.0
+      },
+      {
+        "sector": "Arts and Recreation Services",
+        "industry": "Creative and performing arts activities",
+        "group": "Sales and service income",
+        "value": 2.15,
+        "raw_value": 5847.0
+      },
+      {
+        "sector": "Arts and Recreation Services",
+        "industry": "Sports and recreation activities",
+        "group": "Employment",
+        "value": 17.16,
+        "raw_value": 186.5
+      },
+      {
+        "sector": "Arts and Recreation Services",
+        "industry": "Sports and recreation activities",
+        "group": "Wages",
+        "value": 7.18,
+        "raw_value": 6658.0
+      },
+      {
+        "sector": "Arts and Recreation Services",
+        "industry": "Sports and recreation activities",
+        "group": "Sales and service income",
+        "value": 9.26,
+        "raw_value": 25127.0
+      },
+      {
+        "sector": "Arts and Recreation Services",
+        "industry": "Gambling activities",
+        "group": "Employment",
+        "value": 3.02,
+        "raw_value": 32.8
+      },
+      {
+        "sector": "Arts and Recreation Services",
+        "industry": "Gambling activities",
+        "group": "Wages",
+        "value": 2.7,
+        "raw_value": 2507.0
+      },
+      {
+        "sector": "Arts and Recreation Services",
+        "industry": "Gambling activities",
+        "group": "Sales and service income",
+        "value": 6.56,
+        "raw_value": 17800.0
+      },
+      {
+        "sector": "Auxiliary Finance and Insurance Services",
+        "industry": "Aux Finance and Insurance Services",
+        "group": "Employment",
+        "value": 16.07,
+        "raw_value": 174.6
+      },
+      {
+        "sector": "Auxiliary Finance and Insurance Services",
+        "industry": "Aux Finance and Insurance Services",
+        "group": "Wages",
+        "value": 24.62,
+        "raw_value": 22827.0
+      },
+      {
+        "sector": "Auxiliary Finance and Insurance Services",
+        "industry": "Aux Finance and Insurance Services",
+        "group": "Sales and service income",
+        "value": 29.8,
+        "raw_value": 80877.0
+      },
+      {
+        "sector": "Construction",
+        "industry": "Building construction",
+        "group": "Employment",
+        "value": 23.42,
+        "raw_value": 254.5
+      },
+      {
+        "sector": "Construction",
+        "industry": "Building construction",
+        "group": "Wages",
+        "value": 21.92,
+        "raw_value": 20327.0
+      },
+      {
+        "sector": "Construction",
+        "industry": "Building construction",
+        "group": "Sales and service income",
+        "value": 85.9,
+        "raw_value": 233129.0
+      },
+      {
+        "sector": "Construction",
+        "industry": "Heavy and civil engineering construction",
+        "group": "Employment",
+        "value": 14.14,
+        "raw_value": 153.7
+      },
+      {
+        "sector": "Construction",
+        "industry": "Heavy and civil engineering construction",
+        "group": "Wages",
+        "value": 21.63,
+        "raw_value": 20055.0
+      },
+      {
+        "sector": "Construction",
+        "industry": "Heavy and civil engineering construction",
+        "group": "Sales and service income",
+        "value": 44.24,
+        "raw_value": 120067.0
+      },
+      {
+        "sector": "Construction",
+        "industry": "Construction services",
+        "group": "Employment",
+        "value": 81.21,
+        "raw_value": 882.5
+      },
+      {
+        "sector": "Construction",
+        "industry": "Construction services",
+        "group": "Wages",
+        "value": 57.74,
+        "raw_value": 53545.0
+      },
+      {
+        "sector": "Construction",
+        "industry": "Construction services",
+        "group": "Sales and service income",
+        "value": 100.0,
+        "raw_value": 271395.0
+      },
+      {
+        "sector": "Education and Training (Private)",
+        "industry": "Preschool and school education (private)",
+        "group": "Employment",
+        "value": 28.29,
+        "raw_value": 307.4
+      },
+      {
+        "sector": "Education and Training (Private)",
+        "industry": "Preschool and school education (private)",
+        "group": "Wages",
+        "value": 23.82,
+        "raw_value": 22093.0
+      },
+      {
+        "sector": "Education and Training (Private)",
+        "industry": "Preschool and school education (private)",
+        "group": "Sales and service income",
+        "value": 13.78,
+        "raw_value": 37406.0
+      },
+      {
+        "sector": "Education and Training (Private)",
+        "industry": "Tertiary education (private)",
+        "group": "Employment",
+        "value": 7.05,
+        "raw_value": 76.6
+      },
+      {
+        "sector": "Education and Training (Private)",
+        "industry": "Tertiary education (private)",
+        "group": "Wages",
+        "value": 5.54,
+        "raw_value": 5134.0
+      },
+      {
+        "sector": "Education and Training (Private)",
+        "industry": "Tertiary education (private)",
+        "group": "Sales and service income",
+        "value": 4.66,
+        "raw_value": 12644.0
+      },
+      {
+        "sector": "Education and Training (Private)",
+        "industry": "Adult community and other education (private)",
+        "group": "Employment",
+        "value": 12.14,
+        "raw_value": 131.9
+      },
+      {
+        "sector": "Education and Training (Private)",
+        "industry": "Adult community and other education (private)",
+        "group": "Wages",
+        "value": 4.78,
+        "raw_value": 4429.0
+      },
+      {
+        "sector": "Education and Training (Private)",
+        "industry": "Adult community and other education (private)",
+        "group": "Sales and service income",
+        "value": 4.48,
+        "raw_value": 12171.0
+      },
+      {
+        "sector": "Electricity Gas Water and Waste Services",
+        "industry": "Electricity supply",
+        "group": "Employment",
+        "value": 5.51,
+        "raw_value": 59.9
+      },
+      {
+        "sector": "Electricity Gas Water and Waste Services",
+        "industry": "Electricity supply",
+        "group": "Wages",
+        "value": 9.07,
+        "raw_value": 8409.0
+      },
+      {
+        "sector": "Electricity Gas Water and Waste Services",
+        "industry": "Electricity supply",
+        "group": "Sales and service income",
+        "value": 38.77,
+        "raw_value": 105216.0
+      },
+      {
+        "sector": "Electricity Gas Water and Waste Services",
+        "industry": "Gas supply",
+        "group": "Employment",
+        "value": 0.3,
+        "raw_value": 3.3
+      },
+      {
+        "sector": "Electricity Gas Water and Waste Services",
+        "industry": "Gas supply",
+        "group": "Wages",
+        "value": 0.36,
+        "raw_value": 331.0
+      },
+      {
+        "sector": "Electricity Gas Water and Waste Services",
+        "industry": "Gas supply",
+        "group": "Sales and service income",
+        "value": 5.15,
+        "raw_value": 13973.0
+      },
+      {
+        "sector": "Electricity Gas Water and Waste Services",
+        "industry": "Water supply sewerage and drainage services",
+        "group": "Employment",
+        "value": 3.41,
+        "raw_value": 37.1
+      },
+      {
+        "sector": "Electricity Gas Water and Waste Services",
+        "industry": "Water supply sewerage and drainage services",
+        "group": "Wages",
+        "value": 4.49,
+        "raw_value": 4165.0
+      },
+      {
+        "sector": "Electricity Gas Water and Waste Services",
+        "industry": "Water supply sewerage and drainage services",
+        "group": "Sales and service income",
+        "value": 9.64,
+        "raw_value": 26169.0
+      },
+      {
+        "sector": "Electricity Gas Water and Waste Services",
+        "industry": "Waste collection treatment and disposal services",
+        "group": "Employment",
+        "value": 3.88,
+        "raw_value": 42.2
+      },
+      {
+        "sector": "Electricity Gas Water and Waste Services",
+        "industry": "Waste collection treatment and disposal services",
+        "group": "Wages",
+        "value": 3.94,
+        "raw_value": 3655.0
+      },
+      {
+        "sector": "Electricity Gas Water and Waste Services",
+        "industry": "Waste collection treatment and disposal services",
+        "group": "Sales and service income",
+        "value": 7.86,
+        "raw_value": 21330.0
+      },
+      {
+        "sector": "Health Care and Social Assistance (Private)",
+        "industry": "Hospitals (private)",
+        "group": "Employment",
+        "value": 14.22,
+        "raw_value": 154.5
+      },
+      {
+        "sector": "Health Care and Social Assistance (Private)",
+        "industry": "Hospitals (private)",
+        "group": "Wages",
+        "value": 12.17,
+        "raw_value": 11283.0
+      },
+      {
+        "sector": "Health Care and Social Assistance (Private)",
+        "industry": "Hospitals (private)",
+        "group": "Sales and service income",
+        "value": 8.55,
+        "raw_value": 23191.0
+      },
+      {
+        "sector": "Health Care and Social Assistance (Private)",
+        "industry": "Medical and other health care services (private)",
+        "group": "Employment",
+        "value": 52.75,
+        "raw_value": 573.2
+      },
+      {
+        "sector": "Health Care and Social Assistance (Private)",
+        "industry": "Medical and other health care services (private)",
+        "group": "Wages",
+        "value": 31.36,
+        "raw_value": 29086.0
+      },
+      {
+        "sector": "Health Care and Social Assistance (Private)",
+        "industry": "Medical and other health care services (private)",
+        "group": "Sales and service income",
+        "value": 38.4,
+        "raw_value": 104203.0
+      },
+      {
+        "sector": "Health Care and Social Assistance (Private)",
+        "industry": "Residential care services (private)",
+        "group": "Employment",
+        "value": 35.87,
+        "raw_value": 389.8
+      },
+      {
+        "sector": "Health Care and Social Assistance (Private)",
+        "industry": "Residential care services (private)",
+        "group": "Wages",
+        "value": 24.87,
+        "raw_value": 23059.0
+      },
+      {
+        "sector": "Health Care and Social Assistance (Private)",
+        "industry": "Residential care services (private)",
+        "group": "Sales and service income",
+        "value": 14.65,
+        "raw_value": 39769.0
+      },
+      {
+        "sector": "Health Care and Social Assistance (Private)",
+        "industry": "Social assistance services (private)",
+        "group": "Employment",
+        "value": 62.53,
+        "raw_value": 679.5
+      },
+      {
+        "sector": "Health Care and Social Assistance (Private)",
+        "industry": "Social assistance services (private)",
+        "group": "Wages",
+        "value": 36.16,
+        "raw_value": 33536.0
+      },
+      {
+        "sector": "Health Care and Social Assistance (Private)",
+        "industry": "Social assistance services (private)",
+        "group": "Sales and service income",
+        "value": 20.94,
+        "raw_value": 56838.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Publishing (except internet and music publishing)",
+        "group": "Employment",
+        "value": 4.02,
+        "raw_value": 43.7
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Publishing (except internet and music publishing)",
+        "group": "Wages",
+        "value": 9.02,
+        "raw_value": 8369.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Publishing (except internet and music publishing)",
+        "group": "Sales and service income",
+        "value": 12.27,
+        "raw_value": 33305.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Motion picture and sound recording activities",
+        "group": "Employment",
+        "value": 4.17,
+        "raw_value": 45.3
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Motion picture and sound recording activities",
+        "group": "Wages",
+        "value": 2.77,
+        "raw_value": 2571.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Motion picture and sound recording activities",
+        "group": "Sales and service income",
+        "value": 3.68,
+        "raw_value": 9996.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Broadcasting (except internet)",
+        "group": "Employment",
+        "value": 1.48,
+        "raw_value": 16.1
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Broadcasting (except internet)",
+        "group": "Wages",
+        "value": 1.77,
+        "raw_value": 1644.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Broadcasting (except internet)",
+        "group": "Sales and service income",
+        "value": 3.01,
+        "raw_value": 8169.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Internet publishing and broadcasting",
+        "group": "Employment",
+        "value": 0.63,
+        "raw_value": 6.9
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Internet publishing and broadcasting",
+        "group": "Wages",
+        "value": 0.9,
+        "raw_value": 835.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Internet publishing and broadcasting",
+        "group": "Sales and service income",
+        "value": 1.68,
+        "raw_value": 4557.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Telecommunications services",
+        "group": "Employment",
+        "value": 4.73,
+        "raw_value": 51.4
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Telecommunications services",
+        "group": "Wages",
+        "value": 7.67,
+        "raw_value": 7115.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Telecommunications services",
+        "group": "Sales and service income",
+        "value": 16.84,
+        "raw_value": 45703.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Internet service providers web search portals and data processing services",
+        "group": "Employment",
+        "value": 2.11,
+        "raw_value": 22.9
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Internet service providers web search portals and data processing services",
+        "group": "Wages",
+        "value": 3.17,
+        "raw_value": 2936.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Internet service providers web search portals and data processing services",
+        "group": "Sales and service income",
+        "value": 5.84,
+        "raw_value": 15863.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Library and other information services",
+        "group": "Employment",
+        "value": 0.17,
+        "raw_value": 1.9
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Library and other information services",
+        "group": "Wages",
+        "value": 0.13,
+        "raw_value": 125.0
+      },
+      {
+        "sector": "Information Media and Telecommunications",
+        "industry": "Library and other information services",
+        "group": "Sales and service income",
+        "value": 0.11,
+        "raw_value": 301.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Food product manufacturing",
+        "group": "Employment",
+        "value": 20.66,
+        "raw_value": 224.5
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Food product manufacturing",
+        "group": "Wages",
+        "value": 16.83,
+        "raw_value": 15606.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Food product manufacturing",
+        "group": "Sales and service income",
+        "value": 48.09,
+        "raw_value": 130510.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Beverage and tobacco product manufacturing",
+        "group": "Employment",
+        "value": 3.73,
+        "raw_value": 40.5
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Beverage and tobacco product manufacturing",
+        "group": "Wages",
+        "value": 3.25,
+        "raw_value": 3018.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Beverage and tobacco product manufacturing",
+        "group": "Sales and service income",
+        "value": 8.25,
+        "raw_value": 22385.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Textile leather clothing and footwear manufacturing",
+        "group": "Employment",
+        "value": 2.51,
+        "raw_value": 27.3
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Textile leather clothing and footwear manufacturing",
+        "group": "Wages",
+        "value": 1.57,
+        "raw_value": 1452.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Textile leather clothing and footwear manufacturing",
+        "group": "Sales and service income",
+        "value": 2.94,
+        "raw_value": 7983.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Wood product manufacturing",
+        "group": "Employment",
+        "value": 4.33,
+        "raw_value": 47.1
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Wood product manufacturing",
+        "group": "Wages",
+        "value": 3.51,
+        "raw_value": 3253.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Wood product manufacturing",
+        "group": "Sales and service income",
+        "value": 6.17,
+        "raw_value": 16755.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Pulp paper and converted paper product manufacturing",
+        "group": "Employment",
+        "value": 1.39,
+        "raw_value": 15.1
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Pulp paper and converted paper product manufacturing",
+        "group": "Wages",
+        "value": 1.77,
+        "raw_value": 1638.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Pulp paper and converted paper product manufacturing",
+        "group": "Sales and service income",
+        "value": 4.16,
+        "raw_value": 11303.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Printing (including the reproduction of recorded media)",
+        "group": "Employment",
+        "value": 2.39,
+        "raw_value": 26.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Printing (including the reproduction of recorded media)",
+        "group": "Wages",
+        "value": 1.86,
+        "raw_value": 1726.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Printing (including the reproduction of recorded media)",
+        "group": "Sales and service income",
+        "value": 2.48,
+        "raw_value": 6740.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Petroleum and coal product manufacturing",
+        "group": "Employment",
+        "value": 0.34,
+        "raw_value": 3.7
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Petroleum and coal product manufacturing",
+        "group": "Wages",
+        "value": 0.5,
+        "raw_value": 464.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Petroleum and coal product manufacturing",
+        "group": "Sales and service income",
+        "value": 6.39,
+        "raw_value": 17335.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Basic chemical and chemical product manufacturing",
+        "group": "Employment",
+        "value": 4.63,
+        "raw_value": 50.3
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Basic chemical and chemical product manufacturing",
+        "group": "Wages",
+        "value": 6.1,
+        "raw_value": 5655.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Basic chemical and chemical product manufacturing",
+        "group": "Sales and service income",
+        "value": 14.32,
+        "raw_value": 38859.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Polymer product and rubber product manufacturing",
+        "group": "Employment",
+        "value": 3.68,
+        "raw_value": 40.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Polymer product and rubber product manufacturing",
+        "group": "Wages",
+        "value": 3.43,
+        "raw_value": 3181.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Polymer product and rubber product manufacturing",
+        "group": "Sales and service income",
+        "value": 6.42,
+        "raw_value": 17423.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Polymer product and rubber product manufacturing",
+        "group": "Employment",
+        "value": 4.0,
+        "raw_value": 43.5
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Polymer product and rubber product manufacturing",
+        "group": "Wages",
+        "value": 4.38,
+        "raw_value": 4066.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Polymer product and rubber product manufacturing",
+        "group": "Sales and service income",
+        "value": 9.84,
+        "raw_value": 26692.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Primary metal and metal product manufacturing",
+        "group": "Employment",
+        "value": 3.9,
+        "raw_value": 42.4
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Primary metal and metal product manufacturing",
+        "group": "Wages",
+        "value": 5.17,
+        "raw_value": 4795.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Primary metal and metal product manufacturing",
+        "group": "Sales and service income",
+        "value": 27.81,
+        "raw_value": 75465.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Fabricated metal product manufacturing",
+        "group": "Employment",
+        "value": 10.09,
+        "raw_value": 109.7
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Fabricated metal product manufacturing",
+        "group": "Wages",
+        "value": 8.7,
+        "raw_value": 8069.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Fabricated metal product manufacturing",
+        "group": "Sales and service income",
+        "value": 15.57,
+        "raw_value": 42250.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Transport equipment manufacturing",
+        "group": "Employment",
+        "value": 8.1,
+        "raw_value": 88.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Transport equipment manufacturing",
+        "group": "Wages",
+        "value": 8.46,
+        "raw_value": 7847.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Transport equipment manufacturing",
+        "group": "Sales and service income",
+        "value": 14.58,
+        "raw_value": 39562.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Machinery and equipment manufacturing",
+        "group": "Employment",
+        "value": 9.82,
+        "raw_value": 106.7
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Machinery and equipment manufacturing",
+        "group": "Wages",
+        "value": 11.49,
+        "raw_value": 10654.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Machinery and equipment manufacturing",
+        "group": "Sales and service income",
+        "value": 18.84,
+        "raw_value": 51118.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Furniture and other manufacturing",
+        "group": "Employment",
+        "value": 3.39,
+        "raw_value": 36.8
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Furniture and other manufacturing",
+        "group": "Wages",
+        "value": 2.26,
+        "raw_value": 2099.0
+      },
+      {
+        "sector": "Manufacturing",
+        "industry": "Furniture and other manufacturing",
+        "group": "Sales and service income",
+        "value": 3.62,
+        "raw_value": 9817.0
+      },
+      {
+        "sector": "Mining",
+        "industry": "Coal mining",
+        "group": "Employment",
+        "value": 4.22,
+        "raw_value": 45.9
+      },
+      {
+        "sector": "Mining",
+        "industry": "Coal mining",
+        "group": "Wages",
+        "value": 8.42,
+        "raw_value": 7810.0
+      },
+      {
+        "sector": "Mining",
+        "industry": "Coal mining",
+        "group": "Sales and service income",
+        "value": 42.62,
+        "raw_value": 115667.0
+      },
+      {
+        "sector": "Mining",
+        "industry": "Oil and gas extraction",
+        "group": "Employment",
+        "value": 1.79,
+        "raw_value": 19.4
+      },
+      {
+        "sector": "Mining",
+        "industry": "Oil and gas extraction",
+        "group": "Wages",
+        "value": 4.76,
+        "raw_value": 4412.0
+      },
+      {
+        "sector": "Mining",
+        "industry": "Oil and gas extraction",
+        "group": "Sales and service income",
+        "value": 42.4,
+        "raw_value": 115068.0
+      },
+      {
+        "sector": "Mining",
+        "industry": "Metal ore mining",
+        "group": "Employment",
+        "value": 9.29,
+        "raw_value": 101.0
+      },
+      {
+        "sector": "Mining",
+        "industry": "Metal ore mining",
+        "group": "Wages",
+        "value": 18.32,
+        "raw_value": 16985.0
+      },
+      {
+        "sector": "Mining",
+        "industry": "Metal ore mining",
+        "group": "Sales and service income",
+        "value": 78.82,
+        "raw_value": 213916.0
+      },
+      {
+        "sector": "Mining",
+        "industry": "Non-metallic mineral mining and quarrying",
+        "group": "Employment",
+        "value": 1.44,
+        "raw_value": 15.7
+      },
+      {
+        "sector": "Mining",
+        "industry": "Non-metallic mineral mining and quarrying",
+        "group": "Wages",
+        "value": 1.76,
+        "raw_value": 1630.0
+      },
+      {
+        "sector": "Mining",
+        "industry": "Non-metallic mineral mining and quarrying",
+        "group": "Sales and service income",
+        "value": 8.41,
+        "raw_value": 22822.0
+      },
+      {
+        "sector": "Mining",
+        "industry": "Exploration and other mining support services",
+        "group": "Employment",
+        "value": 4.85,
+        "raw_value": 52.7
+      },
+      {
+        "sector": "Mining",
+        "industry": "Exploration and other mining support services",
+        "group": "Wages",
+        "value": 8.14,
+        "raw_value": 7551.0
+      },
+      {
+        "sector": "Mining",
+        "industry": "Exploration and other mining support services",
+        "group": "Sales and service income",
+        "value": 9.1,
+        "raw_value": 24688.0
+      },
+      {
+        "sector": "Other Services",
+        "industry": "Repair and maintenance",
+        "group": "Employment",
+        "value": 20.65,
+        "raw_value": 224.4
+      },
+      {
+        "sector": "Other Services",
+        "industry": "Repair and maintenance",
+        "group": "Wages",
+        "value": 14.61,
+        "raw_value": 13544.0
+      },
+      {
+        "sector": "Other Services",
+        "industry": "Repair and maintenance",
+        "group": "Sales and service income",
+        "value": 21.65,
+        "raw_value": 58753.0
+      },
+      {
+        "sector": "Other Services",
+        "industry": "Personal and other services",
+        "group": "Employment",
+        "value": 33.01,
+        "raw_value": 358.7
+      },
+      {
+        "sector": "Other Services",
+        "industry": "Personal and other services",
+        "group": "Wages",
+        "value": 19.51,
+        "raw_value": 18090.0
+      },
+      {
+        "sector": "Other Services",
+        "industry": "Personal and other services",
+        "group": "Sales and service income",
+        "value": 15.21,
+        "raw_value": 41289.0
+      },
+      {
+        "sector": "Professional Scientific and Technical Services",
+        "industry": "Professional scientific and technical services",
+        "group": "Employment",
+        "value": 97.74,
+        "raw_value": 1062.1
+      },
+      {
+        "sector": "Professional Scientific and Technical Services",
+        "industry": "Professional scientific and technical services",
+        "group": "Wages",
+        "value": 100.0,
+        "raw_value": 92734.0
+      },
+      {
+        "sector": "Professional Scientific and Technical Services",
+        "industry": "Professional scientific and technical services",
+        "group": "Sales and service income",
+        "value": 98.79,
+        "raw_value": 268118.0
+      },
+      {
+        "sector": "Professional Scientific and Technical Services",
+        "industry": "Computer system design and related services",
+        "group": "Employment",
+        "value": 23.49,
+        "raw_value": 255.3
+      },
+      {
+        "sector": "Professional Scientific and Technical Services",
+        "industry": "Computer system design and related services",
+        "group": "Wages",
+        "value": 34.5,
+        "raw_value": 31994.0
+      },
+      {
+        "sector": "Professional Scientific and Technical Services",
+        "industry": "Computer system design and related services",
+        "group": "Sales and service income",
+        "value": 31.29,
+        "raw_value": 84927.0
+      },
+      {
+        "sector": "Public Administration and Safety (Private)",
+        "industry": "Public order safety and regulatory services (private)",
+        "group": "Employment",
+        "value": 9.83,
+        "raw_value": 106.8
+      },
+      {
+        "sector": "Public Administration and Safety (Private)",
+        "industry": "Public order safety and regulatory services (private)",
+        "group": "Wages",
+        "value": 7.01,
+        "raw_value": 6503.0
+      },
+      {
+        "sector": "Public Administration and Safety (Private)",
+        "industry": "Public order safety and regulatory services (private)",
+        "group": "Sales and service income",
+        "value": 5.66,
+        "raw_value": 15351.0
+      },
+      {
+        "sector": "Rental Hiring and Real Estate Services",
+        "industry": "Rental and hiring services (except real estate)",
+        "group": "Employment",
+        "value": 8.32,
+        "raw_value": 90.4
+      },
+      {
+        "sector": "Rental Hiring and Real Estate Services",
+        "industry": "Rental and hiring services (except real estate)",
+        "group": "Wages",
+        "value": 7.54,
+        "raw_value": 6994.0
+      },
+      {
+        "sector": "Rental Hiring and Real Estate Services",
+        "industry": "Rental and hiring services (except real estate)",
+        "group": "Sales and service income",
+        "value": 15.17,
+        "raw_value": 41173.0
+      },
+      {
+        "sector": "Rental Hiring and Real Estate Services",
+        "industry": "Property operators and real estate services",
+        "group": "Employment",
+        "value": 30.41,
+        "raw_value": 330.5
+      },
+      {
+        "sector": "Rental Hiring and Real Estate Services",
+        "industry": "Property operators and real estate services",
+        "group": "Wages",
+        "value": 18.44,
+        "raw_value": 17102.0
+      },
+      {
+        "sector": "Rental Hiring and Real Estate Services",
+        "industry": "Property operators and real estate services",
+        "group": "Sales and service income",
+        "value": 53.1,
+        "raw_value": 144112.0
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Motor vehicle and motor vehicle parts retailing",
+        "group": "Employment",
+        "value": 10.95,
+        "raw_value": 119.0
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Motor vehicle and motor vehicle parts retailing",
+        "group": "Wages",
+        "value": 9.15,
+        "raw_value": 8489.0
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Motor vehicle and motor vehicle parts retailing",
+        "group": "Sales and service income",
+        "value": 45.89,
+        "raw_value": 124548.0
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Fuel retailing",
+        "group": "Employment",
+        "value": 5.16,
+        "raw_value": 56.1
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Fuel retailing",
+        "group": "Wages",
+        "value": 2.21,
+        "raw_value": 2054.0
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Fuel retailing",
+        "group": "Sales and service income",
+        "value": 21.84,
+        "raw_value": 59282.0
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Food retailing",
+        "group": "Employment",
+        "value": 47.31,
+        "raw_value": 514.1
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Food retailing",
+        "group": "Wages",
+        "value": 20.71,
+        "raw_value": 19204.0
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Food retailing",
+        "group": "Sales and service income",
+        "value": 66.62,
+        "raw_value": 180804.0
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Other store-based retailing",
+        "group": "Employment",
+        "value": 69.4,
+        "raw_value": 754.2
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Other store-based retailing",
+        "group": "Wages",
+        "value": 35.71,
+        "raw_value": 33111.0
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Other store-based retailing",
+        "group": "Sales and service income",
+        "value": 90.75,
+        "raw_value": 246294.0
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Non-store retailing and retail commission-based buying and/or selling",
+        "group": "Employment",
+        "value": 6.09,
+        "raw_value": 66.2
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Non-store retailing and retail commission-based buying and/or selling",
+        "group": "Wages",
+        "value": 3.56,
+        "raw_value": 3305.0
+      },
+      {
+        "sector": "Retail Trade",
+        "industry": "Non-store retailing and retail commission-based buying and/or selling",
+        "group": "Sales and service income",
+        "value": 11.97,
+        "raw_value": 32493.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Road transport",
+        "group": "Employment",
+        "value": 26.78,
+        "raw_value": 291.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Road transport",
+        "group": "Wages",
+        "value": 19.96,
+        "raw_value": 18513.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Road transport",
+        "group": "Sales and service income",
+        "value": 31.9,
+        "raw_value": 86587.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Rail transport",
+        "group": "Employment",
+        "value": 4.2,
+        "raw_value": 45.6
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Rail transport",
+        "group": "Wages",
+        "value": 6.71,
+        "raw_value": 6223.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Rail transport",
+        "group": "Sales and service income",
+        "value": 8.16,
+        "raw_value": 22148.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Water transport",
+        "group": "Employment",
+        "value": 0.75,
+        "raw_value": 8.1
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Water transport",
+        "group": "Wages",
+        "value": 1.08,
+        "raw_value": 1002.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Water transport",
+        "group": "Sales and service income",
+        "value": 1.45,
+        "raw_value": 3943.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Air and space transport",
+        "group": "Employment",
+        "value": 3.86,
+        "raw_value": 41.9
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Air and space transport",
+        "group": "Wages",
+        "value": 5.74,
+        "raw_value": 5322.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Air and space transport",
+        "group": "Sales and service income",
+        "value": 12.28,
+        "raw_value": 33328.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Other transport",
+        "group": "Employment",
+        "value": 1.69,
+        "raw_value": 18.4
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Other transport",
+        "group": "Wages",
+        "value": 1.32,
+        "raw_value": 1224.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Other transport",
+        "group": "Sales and service income",
+        "value": 2.36,
+        "raw_value": 6407.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Postal and courier pick-up and delivery services",
+        "group": "Employment",
+        "value": 9.98,
+        "raw_value": 108.4
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Postal and courier pick-up and delivery services",
+        "group": "Wages",
+        "value": 5.03,
+        "raw_value": 4669.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Postal and courier pick-up and delivery services",
+        "group": "Sales and service income",
+        "value": 8.64,
+        "raw_value": 23453.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Transport support services",
+        "group": "Employment",
+        "value": 12.17,
+        "raw_value": 132.2
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Transport support services",
+        "group": "Wages",
+        "value": 9.93,
+        "raw_value": 9206.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Transport support services",
+        "group": "Sales and service income",
+        "value": 21.97,
+        "raw_value": 59619.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Warehousing and storage services",
+        "group": "Employment",
+        "value": 2.31,
+        "raw_value": 25.1
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Warehousing and storage services",
+        "group": "Wages",
+        "value": 2.25,
+        "raw_value": 2085.0
+      },
+      {
+        "sector": "Transport Postal and Warehousing",
+        "industry": "Warehousing and storage services",
+        "group": "Sales and service income",
+        "value": 3.5,
+        "raw_value": 9494.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Basic material wholesaling",
+        "group": "Employment",
+        "value": 11.81,
+        "raw_value": 128.3
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Basic material wholesaling",
+        "group": "Wages",
+        "value": 11.09,
+        "raw_value": 10285.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Basic material wholesaling",
+        "group": "Sales and service income",
+        "value": 95.35,
+        "raw_value": 258780.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Machinery and equipment wholesaling",
+        "group": "Employment",
+        "value": 17.17,
+        "raw_value": 186.6
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Machinery and equipment wholesaling",
+        "group": "Wages",
+        "value": 21.34,
+        "raw_value": 19787.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Machinery and equipment wholesaling",
+        "group": "Sales and service income",
+        "value": 66.62,
+        "raw_value": 180791.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Motor vehicle and motor vehicle parts wholesaling",
+        "group": "Employment",
+        "value": 4.88,
+        "raw_value": 53.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Motor vehicle and motor vehicle parts wholesaling",
+        "group": "Wages",
+        "value": 4.82,
+        "raw_value": 4473.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Motor vehicle and motor vehicle parts wholesaling",
+        "group": "Sales and service income",
+        "value": 35.6,
+        "raw_value": 96615.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Grocery liquor and tobacco product wholesaling",
+        "group": "Employment",
+        "value": 8.78,
+        "raw_value": 95.4
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Grocery liquor and tobacco product wholesaling",
+        "group": "Wages",
+        "value": 7.36,
+        "raw_value": 6823.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Grocery liquor and tobacco product wholesaling",
+        "group": "Sales and service income",
+        "value": 37.95,
+        "raw_value": 102991.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Other goods wholesaling",
+        "group": "Employment",
+        "value": 10.05,
+        "raw_value": 109.2
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Other goods wholesaling",
+        "group": "Wages",
+        "value": 9.66,
+        "raw_value": 8957.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Other goods wholesaling",
+        "group": "Sales and service income",
+        "value": 39.56,
+        "raw_value": 107368.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Commission-based wholesaling",
+        "group": "Employment",
+        "value": 2.92,
+        "raw_value": 31.7
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Commission-based wholesaling",
+        "group": "Wages",
+        "value": 2.09,
+        "raw_value": 1936.0
+      },
+      {
+        "sector": "Wholesale Trade",
+        "industry": "Commission-based wholesaling",
+        "group": "Sales and service income",
+        "value": 9.47,
+        "raw_value": 25709.0
+      }
+    ]
+  },
+  "sectors": [
+    "Accommodation and Food Services",
+    "Administrative and Support Services",
+    "Agriculture Forestry and Fishing",
+    "Arts and Recreation Services",
+    "Auxiliary Finance and Insurance Services",
+    "Construction",
+    "Education and Training (Private)",
+    "Electricity Gas Water and Waste Services",
+    "Health Care and Social Assistance (Private)",
+    "Information Media and Telecommunications",
+    "Manufacturing",
+    "Mining",
+    "Other Services",
+    "Professional Scientific and Technical Services",
+    "Public Administration and Safety (Private)",
+    "Rental Hiring and Real Estate Services",
+    "Retail Trade",
+    "Transport Postal and Warehousing",
+    "Wholesale Trade"
+  ]
+}
