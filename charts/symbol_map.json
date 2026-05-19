@@ -17,7 +17,7 @@
   "layer": [
     {
       "data": {
-        "url": "../data/aus_states.json",
+        "url":"/FIT2179-A2/data/aus_states.json",
         "format": { "type": "topojson", "feature": "STE_2021_AUST_GDA2020" }
       },
       "mark": {

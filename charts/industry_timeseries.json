@@ -3,7 +3,7 @@
   "width": 800,
   "height": 450,
   "padding": {"left": 20, "right": 20, "top": 20, "bottom": 20},
-  "data": {"url": "../data/timeseries_ind.csv"},
+  "data": {"url":"/FIT2179-A2/data/timeseries_ind.csv"},
   "params": [
     {
       "name": "industrySelection",

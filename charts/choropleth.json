@@ -17,7 +17,7 @@
   "layer": [
     {
       "data": {
-        "url": "../data/aus_states.json",
+        "url":"/FIT2179-A2/data/aus_states.json",
         "format": {
           "type": "topojson",
           "feature": "STE_2021_AUST_GDA2020" 
@@ -33,7 +33,7 @@
     },
     {
       "data": {
-        "url": "../data/aus_s4.json",
+        "url":"/FIT2179-A2/data/aus_s4.json",
         "format": { "type": "topojson", "feature": "SA4_2021_AUST_GDA2020" }
       },
       "transform": [
@@ -41,7 +41,7 @@
           "lookup": "properties.SA4_CODE21",
           "from": {
             "data": {
-              "url": "../data/SA4_data.csv"
+              "url":"/FIT2179-A2/data/SA4_data.csv"
             },
             "key": "SA4 Code",
             "fields": ["Working Age Employment Rate (%)", "Unemployment Rate (%)", "Job Vacancy Rate (%)", "Vacancy Fill Rate (%) (GCCSA)"]

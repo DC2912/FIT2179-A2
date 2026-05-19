@@ -3,7 +3,7 @@
   "width": 600,
   "height": 400,
   "data": {
-    "url": "../data/occupations_clean.csv",
+    "url":"/FIT2179-A2/data/occupations_clean.csv",
     "format": {
       "type": "csv",
       "parse": {
