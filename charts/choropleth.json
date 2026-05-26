@@ -1,14 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "width": 600,
-  "height": 400,
+  "width": "container",
+  "height": "container",
   "params": [
     {
       "name": "metric",
       "value": "Working Age Employment Rate (%)",
       "bind": {
         "input": "select",
-        "options":  ["Working Age Employment Rate (%)", "Unemployment Rate (%)", "Job Vacancy Rate (%)", "Vacancy Fill Rate (%) (GCCSA)"],
+        "options": ["Working Age Employment Rate (%)", "Unemployment Rate (%)", "Job Vacancy Rate (%)", "Vacancy Fill Rate (%) (GCCSA)"],
         "labels": ["Working Age Employment Rate (%)", "Unemployment Rate (%)", "Job Vacancy Rate (%)", "Vacancy Fill Rate (%)"],
         "name": "Metric: "
       }
@@ -17,55 +17,60 @@
   "layer": [
     {
       "data": {
-        "url":"/FIT2179-A2/data/aus_states.json",
-        "format": {
-          "type": "topojson",
-          "feature": "STE_2021_AUST_GDA2020" 
-        }
+        "url": "../data/aus_states.json",
+        "format": { "type": "topojson", "feature": "STE_2021_AUST_GDA2020" }
       },
-
       "mark": {
         "type": "geoshape",
-        "fill": "#ffffff",
+        "fill": "#f0f0f0",
         "stroke": "#00000034",
         "strokeWidth": 1
       }
     },
     {
       "data": {
-        "url":"/FIT2179-A2/data/aus_s4.json",
+        "url": "../data/aus_s4.json",
         "format": { "type": "topojson", "feature": "SA4_2021_AUST_GDA2020" }
       },
       "transform": [
         {
           "lookup": "properties.SA4_CODE21",
           "from": {
-            "data": {
-              "url":"/FIT2179-A2/data/SA4_data.csv"
-            },
+            "data": { "url": "../data/SA4_data.csv" },
             "key": "SA4 Code",
             "fields": ["Working Age Employment Rate (%)", "Unemployment Rate (%)", "Job Vacancy Rate (%)", "Vacancy Fill Rate (%) (GCCSA)"]
           }
         },
+        { "calculate": "datum[metric]", "as": "selected_value" },
+        { "filter": "datum.selected_value > 0" },
         {
-          "calculate": "datum[metric]",
-          "as": "selected_value"
-        }
+          "calculate": "metric === 'Working Age Employment Rate (%)' ? (datum.selected_value < 72 ? 1 : datum.selected_value < 76 ? 2 : datum.selected_value < 80 ? 3 : datum.selected_value < 83.7 ? 4 : 5) : metric === 'Unemployment Rate (%)' ? (datum.selected_value < 3 ? 1 : datum.selected_value < 4 ? 2 : datum.selected_value < 5 ? 3 : datum.selected_value < 6.4 ? 4 : 5) : metric === 'Job Vacancy Rate (%)' ? (datum.selected_value < 2 ? 1 : datum.selected_value < 3 ? 2 : datum.selected_value < 4 ? 3 : datum.selected_value < 5.1 ? 4 : 5) : (datum.selected_value < 60 ? 1 : datum.selected_value < 65 ? 2 : datum.selected_value < 70 ? 3 : datum.selected_value < 76 ? 4 : 5)",
+          "as": "bin"
+        },
+        { "calculate": "datum.selected_value + '%'", "as": "value_label" }
       ],
-      "mark": { "type": "geoshape" },
+      "mark": { "type": "geoshape", "stroke": "#ffffff", "strokeWidth": 0.5 },
       "encoding": {
         "color": {
-          "field": "selected_value",
-          "type": "quantitative",
-          "scale": { "scheme": "blues" },
-          "title": "Value"
+          "field": "bin",
+          "type": "ordinal",
+          "scale": {
+            "domain": [1, 2, 3, 4, 5],
+            "range": ["#c6dbef", "#9ecae1", "#6baed6", "#2171b5", "#084594"]
+          },
+          "legend": {
+            "title": null,
+            "labelExpr": "metric === 'Working Age Employment Rate (%)' ? (datum.value === 1 ? '< 72%' : datum.value === 2 ? '72–76%' : datum.value === 3 ? '76–80%' : datum.value === 4 ? '80–83.7%' : '83.7%+') : metric === 'Unemployment Rate (%)' ? (datum.value === 1 ? '< 3%' : datum.value === 2 ? '3–4%' : datum.value === 3 ? '4–5%' : datum.value === 4 ? '5–6.4%' : '6.4%+') : metric === 'Job Vacancy Rate (%)' ? (datum.value === 1 ? '< 2%' : datum.value === 2 ? '2–3%' : datum.value === 3 ? '3–4%' : datum.value === 4 ? '4–5.1%' : '5.1%+') : (datum.value === 1 ? '< 60%' : datum.value === 2 ? '60–65%' : datum.value === 3 ? '65–70%' : datum.value === 4 ? '70–76%' : '76%+')"
+          }
         },
+        
         "tooltip": [
-          {"field": "properties.SA4_NAME21", "type": "nominal", "title": "Area"},
-          {"field": "selected_value", "type": "quantitative", "title": "Value"}
+          { "field": "properties.SA4_NAME21", "type": "nominal", "title": "Area" },
+          {  "field": "value_label", "type": "nominal", "title": "Value" }
         ]
       }
     }
   ],
-  "projection": { "type": "mercator" }
+  "projection": { "type": "mercator","center": [134, -28],
+  "scale": 700 }
 }

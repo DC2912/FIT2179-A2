@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": 1000,
   "data": {
-    "url": "/FIT2179-A2/data/inout.csv"
+    "url": "../data/inout.csv"
   },
   "transform": [
     {

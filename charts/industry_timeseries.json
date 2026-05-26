@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
+  "width": "container",
   "height": 450,
   "padding": {"left": 20, "right": 20, "top": 20, "bottom": 20},
-  "data": {"url":"/FIT2179-A2/data/timeseries_ind.csv"},
+  "data": {"url": "../data/timeseries_ind.csv"},
   "params": [
     {
       "name": "industrySelection",
@@ -59,7 +59,7 @@
       "field": "employment_num",
       "type": "quantitative",
       "axis": {
-        "title": "Employment (thousands)",
+        "title": "Employment ('000s)",
         "labelFontSize": 11,
         "labelColor": "#aaa",
         "domain": false,

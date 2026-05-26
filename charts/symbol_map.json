@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "width": 600,
-  "height": 500,
+  "width": "container",
+  "height": "container",
   "params": [
     {
       "name": "metric",
@@ -17,14 +17,14 @@
   "layer": [
     {
       "data": {
-        "url":"/FIT2179-A2/data/aus_states.json",
+        "url": "../data/aus_states.json",
         "format": { "type": "topojson", "feature": "STE_2021_AUST_GDA2020" }
       },
       "mark": {
         "type": "geoshape",
         "fill": "#e8e8e8",
         "stroke": "white",
-        "strokeWidth": 1
+        "strokeWidth": 2
       }
     },
     {
@@ -66,5 +66,6 @@
       }
     }
   ],
-  "projection": {"type": "mercator"}
+  "projection": {"type": "mercator","center": [134, -28],
+  "scale": 700}
 }

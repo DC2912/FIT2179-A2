@@ -1,7 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width":"container",
+  "height":"container",
   "data": {
-    "url": "/FIT2179-A2/data/industries_normalized.json",
+    "url": "../data/industries_normalized.json",
     "format": {
       "type": "json",
       "property": "data.values"
@@ -13,7 +15,6 @@
       "bind": {
         "input": "select",
         "options": [
-          "All Sectors",
           "Accommodation and Food Services",
           "Administrative and Support Services",
           "Agriculture Forestry and Fishing",
@@ -35,7 +36,6 @@
           "Wholesale Trade"
         ],
         "labels": [
-          "All Sectors",
           "Accommodation and Food Services",
           "Administrative and Support Services",
           "Agriculture Forestry and Fishing",
@@ -58,7 +58,7 @@
         ],
         "name": "Sector: "
       },
-      "value": null
+      "value": "Accommodation and Food Services"
     }
   ],
   "transform": [
@@ -70,10 +70,12 @@
   "encoding": {
     "x": {
       "field": "industry",
+      "title":"Industry",
       "type": "nominal",
       "sort": "-y",
       "axis": {
-  "labelAngle": -45
+  "labelAngle": -45,
+  "labelLimit": 100
 }
     },
     "y": {
@@ -85,7 +87,8 @@
       "field": "group"
     },
     "color": {
-      "field": "group"
+      "field": "group",
+      "title":"Group"
     }
   }
 }

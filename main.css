@@ -1,12 +1,13 @@
 /* ── Reset & Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+
 :root {
   --ink:        #0f0e0c;
   --ink-mid:    #3a3830;
   --ink-soft:   #7a7568;
-  --paper:      #f5f2ec;
-  --paper-alt:  #edeae2;
+  --paper:      #ecf9ff;
+  --paper-alt:  #e9eef3;
   --accent:     #c8522a;
   --accent-2:   #2a6e5e;
   --rule:       #d4cfc4;
@@ -31,11 +32,11 @@ body {
 /* ── Hero ── */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 6rem 8vw 4rem;
+  padding: 3rem 4vw 4rem;
   overflow: hidden;
   background: var(--ink);
   color: var(--paper);
@@ -56,7 +57,7 @@ body {
   position: absolute;
   bottom: -2px;
   left: 0; right: 0;
-  height: 120px;
+  height: 90px;
   background: var(--paper);
   clip-path: ellipse(55% 100% at 50% 100%);
 }
@@ -72,10 +73,9 @@ body {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 8vw, 7rem);
+  font-size: 50px;
   line-height: 1.05;
   font-weight: 400;
-  max-width: 14ch;
   margin-bottom: 1.5rem;
 }
 
@@ -170,6 +170,10 @@ body {
   align-items: start;
 }
 
+.section-header.single {
+  grid-template-columns: 1fr;
+}
+
 @media (max-width: 768px) {
   .section-header { grid-template-columns: 1fr; gap: 1.5rem; }
 }
@@ -184,7 +188,7 @@ body {
 
 .section-desc {
   color: var(--ink-soft);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.75;
   max-width: 52ch;
 }
@@ -226,10 +230,15 @@ body {
   padding: 1.5rem;
   min-height: 420px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   position: relative;
   overflow: hidden;
+}
+
+.chart-frame.short {
+  min-width: 800px;
+  min-height: 500px;
 }
 
 .chart-frame.wide {

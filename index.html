@@ -16,9 +16,8 @@
   <!-- Hero -->
   <header class="hero">
     <div class="hero-eyebrow">FIT2179 Assignment 2</div>
-    <h1 class="hero-title">The State of<br><em>Australian Industry</em></h1>
+    <h1 class="hero-title">The State of <em>Australian Industry</em></h1>
     <p class="hero-sub">A visual deep-dive into employment, wages, mobility, and growth across every sector of the Australian economy.</p>
-    <div class="hero-scroll">Scroll to explore ↓</div>
     <div class="hero-bg-grid"></div>
   </header>
 
@@ -37,18 +36,20 @@
     <!-- ── SECTION 1 ── Industry Overview -->
     <section id="section-1" class="chart-section">
       <div class="section-label">01 / Industry Overview</div>
-      <div class="section-header">
+      <div class="section-header single">
         <div class="section-title-block">
-          <h2>Employment, Wages &amp; Sales<br>by Sector</h2>
+          <h2>Employment, Wages &amp; Sales by Sector, 2024</h2>
           <p class="section-desc">Select a sector to compare total employed persons, median weekly wages, and annual sales revenue across Australia's major industries. Notice how large workforces don't always command the highest wages.</p>
         </div>
-        <div class="section-annotation">
+      </div>
+      <div style="display: flex; flex-direction: row; gap: 40px;">
+      <div class="chart-frame short" id="chart1"></div>
+      <div class="section-annotation">
           <span class="annotation-tag">Grouped Bar</span>
           <p>Each cluster represents one industry. Bars are scaled independently per metric — use the filter to isolate sectors.</p>
           <p>Each metric is scaled to its own category peak — employment against Food Services, wages against Professional, Scientific & Technical Services, and sales against Construction.</p>
-        </div>
       </div>
-      <div class="chart-frame" id="chart1"></div>
+      </div>
     </section>
 
     <!-- ── SECTION 2 ── Employment Trends -->
@@ -70,33 +71,38 @@
     <!-- ── SECTION 3 ── Geographic -->
     <section id="section-3" class="chart-section">
       <div class="section-label">03 / Geographic Distribution</div>
-      <div class="section-header">
+      <div class="section-header single">
         <div class="section-title-block">
-          <h2>Employment by State,<br>2024</h2>
+          <h2>Employment by State, 2024</h2>
           <p class="section-desc">Circle size encodes total employed persons by employment range within each state and territory. The bigger the state, the larger the circle</p>
         </div>
-        <div class="section-annotation">
+      </div>
+      <div style="display: flex; flex-direction: row; gap: 40px;">
+      <div class="chart-frame short" id="chart3"></div>
+      <div class="section-annotation">
           <span class="annotation-tag">Proportional Symbol Map</span>
-          <p>Filter by employment range bracket. East coast states NSW, VIC and QLD accounted for the largest share of employed people. But while NT and ACT are small, they punch above their weight per capita.</p>
+          <p>Filter by employment range bracket. East coast states NSW, VIC and QLD accounted for the largest share of employed people. But while NT and ACT are small, they have high employment per capita</p>
         </div>
       </div>
-      <div class="chart-frame wide" id="chart3"></div>
     </section>
 
     <!-- ── SECTION 4 ── State Labour Market -->
     <section id="section-4" class="chart-section alt-bg">
       <div class="section-label">04 / SA4 Area Labour Market Health</div>
-      <div class="section-header">
+      <div class="section-header single">
         <div class="section-title-block">
-          <h2>Employment, Unemployment<br>&amp; Vacancy Rates</h2>
-          <p class="section-desc">A choropleth of four key labour market indicators across sub-state regions. Switch between working-age employment rate, unemployment rate, job vacancy rate, and vacancy fill rate to understand where tightness and slack exist geographically.</p>
+          <h2>Employment, Unemployment &amp; <br>Vacancy Rates, 2024</h2>
+          <p class="section-desc">A choropleth of four key labour market indicators across sub-state regions. Switch between working-age employment rate, unemployment rate, job vacancy rate, and vacancy fill rate to understand where how the trends exist geographically.</p>
         </div>
-        <div class="section-annotation">
+        
+      </div>
+      <div style="display: flex; flex-direction: row; gap: 40px;">
+      <div class="chart-frame short" id="chart4"></div>
+      <div class="section-annotation">
           <span class="annotation-tag">Choropleth</span>
           <p>Darker shading = higher rate. Vacancy fill rate is GCCSA-level and may differ from state boundaries.</p>
         </div>
       </div>
-      <div class="chart-frame wide" id="chart4"></div>
 
       <div class="divider-rule"></div>
 
@@ -105,7 +111,7 @@
       <div class="section-header">
         <div class="section-title-block">
           <h2>Employment Change by State:<br>2008 → 2024</h2>
-          <p class="section-desc">A slope chart strips away everything except the start and end point. Each line represents one state — steeper upward slopes mean stronger employment growth over 16 years. Crossings reveal states that overtook others.</p>
+          <p class="section-desc">A slope chart shows just the start and end point. Each line represents one state; steeper upward slopes mean stronger employment growth over 16 years. Crossings reveal states that overtook others.</p>
         </div>
         <div class="section-annotation">
           <span class="annotation-tag">Slope Chart</span>
@@ -123,11 +129,11 @@
       <div class="section-header">
         <div class="section-title-block">
           <h2>Industry Employment<br>2008–2024</h2>
-          <p class="section-desc">Each line is an industry. Sixteen years of employment data reveals which sectors have grown, contracted, or plateaued. The rise in healthcare after 2020 is particularly striking.</p>
+          <p class="section-desc">Each line represents an industry. Sixteen years of employment data reveals which sectors have grown, contracted, or plateaued. The rise in healthcare after 2020 is particularly striking.</p>
         </div>
         <div class="section-annotation">
           <span class="annotation-tag">Multi-Line Chart</span>
-          <p>Hover a line to highlight one industry. Use the legend to isolate sectors of interest.</p>
+          <p>Use the legend to isolate sectors of interest.</p>
         </div>
       </div>
       <div class="chart-frame wide" id="chart6"></div>
@@ -139,11 +145,11 @@
       <div class="section-header">
         <div class="section-title-block">
           <h2>Top &amp; Bottom 10<br>Occupations</h2>
-          <p class="section-desc">Two dot plots, one ranked ascending, one descending. Select any metric — employment, part-time share, female share, median earnings, age, or annual growth — to instantly surface the leaders and laggards. The juxtaposition often surprises.</p>
+          <p class="section-desc">The two dots plots display the top 10 and bottom 10 industries in each metric: employment, part-time share, female share, median earnings, age, or annual growth.</p>
         </div>
         <div class="section-annotation">
           <span class="annotation-tag">Dot Plot × 2</span>
-          <p>Left = top 10 descending. Right = bottom 10 ascending. Same metric, opposite ends of the spectrum.</p>
+          <p>Left = top 10 descending. Right = bottom 10 ascending. Shows the same metric but opposite ends of the spectrum</p>
         </div>
       </div>
       <div class="dot-plot-grid">
@@ -164,7 +170,7 @@
       <div class="section-header">
         <div class="section-title-block">
           <h2>Mode of Travel to Work:<br>2016 &amp; 2021</h2>
-          <p class="section-desc">Two census snapshots, five years apart. The shift away from public transport following COVID-19 is visible in the 2021 data. Work from home dominance grew steeply — a pattern seen globally</p>
+          <p class="section-desc">Two census snapshots, five years apart. The shift away from public transport and dominance of work-from-home culture following COVID-19 is visible in the 2021 data.</p>
         </div>
         <div class="section-annotation">
           <span class="annotation-tag">Donut Chart × 2</span>
@@ -188,7 +194,9 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">Australian Industry Insights</div>
-      <div class="footer-meta">Data sourced from the Australian Bureau of Statistics and Jobs and Skills Australia. Visualisations built with Vega-Lite.</div>
+      <div class="footer-meta">Data sourced from the Australian Bureau of Statistics and Jobs and Skills Australia. Visualisations built with Vega-Lite.
+        <br>Made by Dhruv Chandel - 34227849
+      </div>
     </div>
   </footer>
 

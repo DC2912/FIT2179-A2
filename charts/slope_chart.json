@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 300,
+  "width": "container",
   "height": 500,
   "padding": {"left": 50, "right": 50, "top": 20, "bottom": 20},
   "data": {
@@ -44,7 +44,7 @@
           "axis": {
             "tickCount": 9,
             "values": [0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500],
-            "title": null,
+            "title": "Employees ('000s)",
             "domain": false,
             "ticks": false,
             "gridColor": "#e0e0e0",
@@ -68,8 +68,7 @@
             "columns": 4,
             "labelFontSize": 12,
             "symbolType": "circle",
-            "symbolSize":20
-            
+            "symbolSize": 20
           }
         },
         "detail": {"field": "state"}
@@ -86,13 +85,13 @@
           "legend": null,
           "scale": {
             "domain": ["NSW", "Vic", "Qld", "WA", "SA", "Tas", "ACT", "NT"],
-            "scheme":"accent"
+            "scheme": "accent"
           }
         },
         "tooltip": [
           {"field": "state", "title": "State"},
           {"field": "year", "title": "Year"},
-          {"field": "employment", "title": "Employment (thousands)", "format": ",.1f"}
+          {"field": "employment", "title": "Employment ('000s)", "format": ",.1f"}
         ]
       }
     },
@@ -100,6 +99,41 @@
       "mark": {"type": "rule", "strokeWidth": 1, "color": "#ccc"},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"}
+      }
+    },
+    {
+      "data": {
+        "values": [{"year": "Jun-24", "employment": 260, "label": "ACT projected to overtake TAS by 2030 →"}]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "color": "#555",
+        "dx": -8,
+        "dy": -10
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "employment", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "data": {
+        "values": [{"year": "Jun-24", "y1": 242.9, "y2": 211.3}]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 1.5,
+        "strokeDash": [4, 2],
+        "color": "#555"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "y1", "type": "quantitative"},
+        "y2": {"field": "y2"}
       }
     }
   ],
