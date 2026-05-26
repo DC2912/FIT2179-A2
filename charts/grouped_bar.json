@@ -3,7 +3,7 @@
   "width":"container",
   "height":"container",
   "data": {
-    "url": "../data/industries_normalized.json",
+    "url": "/FIT2179-A2/data/industries_normalized.json",
     "format": {
       "type": "json",
       "property": "data.values"
